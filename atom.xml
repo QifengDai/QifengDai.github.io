@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Qifeng Dai&#39;s Blog</title>
+  
+  <subtitle>欢迎你的到来！</subtitle>
+  <link href="https://qifengdai.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://qifengdai.github.io/"/>
+  <updated>2022-04-23T15:31:42.578Z</updated>
+  <id>https://qifengdai.github.io/</id>
+  
+  <author>
+    <name>DaIQiFenG</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello</title>
+    <link href="https://qifengdai.github.io/post/3610a686.html"/>
+    <id>https://qifengdai.github.io/post/3610a686.html</id>
+    <published>2022-04-23T15:31:21.000Z</published>
+    <updated>2022-04-23T15:31:42.578Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://qifengdai.github.io/post/4a17b156.html"/>
+    <id>https://qifengdai.github.io/post/4a17b156.html</id>
+    <published>2022-04-23T12:22:29.463Z</published>
+    <updated>2022-04-23T15:31:42.578Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
