@@ -112,17 +112,6 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/friends" class="waves-effect waves-light">
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
@@ -207,17 +196,6 @@
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
 			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
 		</a>
           
         </li>
@@ -747,7 +725,7 @@
 
     #vcomments textarea {
         box-sizing: border-box;
-        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+        background: url("/null") 100% 100% no-repeat;
     }
 
     #vcomments p {
@@ -986,17 +964,28 @@
 <script>
     new Valine({
         el: '#vcomments',
+		admin_email: 'daiqifeng0511@gmail.com',
         appId: '7eRsp2Ta8p60GJoEFiJy01pl-gzGzoHsz',
         appKey: 'wt1b5UcVhknXzxOmWECNEYYv',
         notify: 'false' === 'true',
         verify: 'false' === 'true',
         visitor: 'true' === 'true',
+		comment_count: 'true' === 'true',
         avatar: 'retro',
         pageSize: '10',
         lang: 'zh-cn',
+		path: window.location.pathname,
         placeholder: '留言可以留下联系方式哦~输入邮箱会有邮件回复提醒，更高效进行交流~'
     });
+	
+	$(document).ready(function(){ 
+		$("#vcomments").on('click', 'span.vat',function(){ 		
+			$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap")); 	
+			$('textarea#veditor').focus(); 
+		}) 
+	})
 </script>
+
 
 <!--酷Q推送-->
 
@@ -1221,7 +1210,8 @@
                 <span id="year">2022</span>
             
             <a href="/about" target="_blank">DaIQiFenG</a>
-            
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
