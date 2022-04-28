@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Blog各种文章格式的使用</title>
+      <link href="/post/79441da.html"/>
+      <url>/post/79441da.html</url>
+      
+        <content type="html"><![CDATA[<h4 id="代码块折叠"><a href="#代码块折叠" class="headerlink" title="代码块折叠"></a>代码块折叠</h4><pre class="line-numbers language-none"><code class="language-none">&lt;details&gt;  &lt;summary&gt;点击展开&lt;/summary&gt;  这是展开的内容.&lt;/details&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><details>  <summary>点击展开</summary>      这是展开的内容.</details><h4 id="B站视频"><a href="#B站视频" class="headerlink" title="B站视频"></a>B站视频</h4><iframe src="//player.bilibili.com/player.html?bvid=BV1Wa4y1W7z5&amp;cid=261330229&amp;page=1&amp;share_source=copy_web" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="550"></iframe><h4 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h4><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" src="//music.163.com/outchain/player?type=2&amp;id=1857630559&amp;auto=1&amp;height=66"></iframe><h4 id="Echarts"><a href="#Echarts" class="headerlink" title="Echarts"></a>Echarts</h4><pre class="line-numbers language-none"><code class="language-none">{% echarts 400 '85%' %}{    title: {        text: '某站点用户访问来源',        subtext: '纯属虚构',        left: 'center'    },    tooltip: {        trigger: 'item'    },    legend: {        orient: 'vertical',        left: 'left',    },    series: [        {            name: '访问来源',            type: 'pie',            radius: '50%',            data: [                {value: 1048, name: '搜索引擎'},                {value: 735, name: '直接访问'},                {value: 580, name: '邮件营销'},                {value: 484, name: '联盟广告'},                {value: 300, name: '视频广告'}            ],            emphasis: {                itemStyle: {                    shadowBlur: 10,                    shadowOffsetX: 0,                    shadowColor: 'rgba(0, 0, 0, 0.5)'                }            }        }    ]}{% endecharts %}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><div id="echarts9194" style="width: 85%;height: 400px;margin: 0 auto"></div><script src="https://cdn.bootcss.com/echarts/4.3.0/echarts.common.min.js"></script><script type="text/javascript">// 基于准备好的dom，初始化echarts实例var myChart = echarts.init(document.getElementById('echarts9194'));// 指定图表的配置项和数据{    title: {        text: '某站点用户访问来源',        subtext: '纯属虚构',        left: 'center'    },    tooltip: {        trigger: 'item'    },    legend: {        orient: 'vertical',        left: 'left',    },    series: [        {            name: '访问来源',            type: 'pie',            radius: '50%',            data: [                {value: 1048, name: '搜索引擎'},                {value: 735, name: '直接访问'},                {value: 580, name: '邮件营销'},                {value: 484, name: '联盟广告'},                {value: 300, name: '视频广告'}            ],            emphasis: {                itemStyle: {                    shadowBlur: 10,                    shadowOffsetX: 0,                    shadowColor: 'rgba(0, 0, 0, 0.5)'                }            }        }    ]}// 使用刚指定的配置项和数据显示图表。myChart.setOption(option);</script><h4 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h4><pre class="line-numbers language-none"><code class="language-none">[language][title][url][link-text]正确姿势,代码片段开头:[language]是代码语言的名称,用来设置代码块颜色高亮,非必须;[title]是顶部左边的说明,非必须;[ur1]是顶部右边的超链接地址,非必须;[link-text]如它的字面意思,超链接的名称,非必须.这4项应该是根据空格来分隔,而不是[],故请不要加[].除非如果你想写后面两个，但不想写前面两个;那么就必须加了,要这样写:[] [] [url] [link-text] .<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-java" data-language="java"><div class="caption"><span>helloworld</span><a href="https://qifengdai.github.io/">Qifeng Dai's Blog</a></div><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hh</title>
       <link href="/post/af941a3a.html"/>
       <url>/post/af941a3a.html</url>
