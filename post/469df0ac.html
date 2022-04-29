@@ -4,9 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Blog各种文章格式的使用, DQF, python, 深度学习, Java, 后端, 学习分享">
-    <meta name="description" content="提示块&amp;lt;div class=&#34;note info&#34;&amp;gt;这里是 info 标签样式&amp;lt;/div&amp;gt; 
-&amp;lt;div class=&#34;note info no-icon&#34;&amp;gt;这里是不带符号的 info 标签样式&amp;lt;/d">
+    <meta name="keywords" content="正则表达式学习, DQF, python, 深度学习, Java, 后端, 学习分享">
+    <meta name="description" content="正则表达式
+一、基本语法 .  除换行以外的其他任意字符
+\s  空白字符
+\S   除空白字符以外的任意字符
+\w  字母、数字、下划线
+\W  除了字母、数字、下划线以外的任意字符
+\d   数字 0-9
+\D  除了数字之外的任意字符">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +26,7 @@
 
     
 
-    <title>Blog各种文章格式的使用 | Qifeng Dai&#39;s Blog</title>
+    <title>正则表达式学习 | Qifeng Dai&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -314,12 +320,12 @@ var _hmt = _hmt || [];
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Blog各种文章格式的使用</h1>
+                    <h1 class="description center-align post-title">正则表达式学习</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +441,8 @@ var _hmt = _hmt || [];
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Blog/">
-                                <span class="chip bg-color">Blog</span>
+                            <a href="/tags/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/">
+                                <span class="chip bg-color">开发技术</span>
                             </a>
                         
                     </div>
@@ -447,8 +453,8 @@ var _hmt = _hmt || [];
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Blog/" class="post-category">
-                                Blog
+                            <a href="/categories/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/" class="post-category">
+                                开发技术
                             </a>
                         
                     </div>
@@ -460,7 +466,7 @@ var _hmt = _hmt || [];
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-28
+                    2022-04-29
                 </div>
                 
 
@@ -474,14 +480,14 @@ var _hmt = _hmt || [];
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    896
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    6 分
                 </div>
                 
 
@@ -504,190 +510,154 @@ var _hmt = _hmt || [];
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="提示块"><a href="#提示块" class="headerlink" title="提示块"></a>提示块</h4><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>note info<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这里是 info 标签样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>note info no-icon<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这里是不带符号的 info 标签样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>note primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这里是 primary 标签样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>note primary no-icon<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这里是不带符号的 primary 标签样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>note warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这里是 warning 标签样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>note warning no-icon<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这里是不带符号的 warning 标签样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>note danger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这里是 danger 标签样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>note danger no-icon<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>这里是不带符号的 danger 标签样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><hr>
+<h3 id="一、基本语法"><a href="#一、基本语法" class="headerlink" title="一、基本语法"></a>一、基本语法</h3><pre class="line-numbers language-none"><code class="language-none"> .  除换行以外的其他任意字符
+\s  空白字符
+\S   除空白字符以外的任意字符
+\w  字母、数字、下划线
+\W  除了字母、数字、下划线以外的任意字符
+\d   数字 0-9
+\D  除了数字之外的任意字符
 
-<div class="note info">这里是 info 标签样式</div> <div class="note info no-icon">这里是不带符号的 info 标签样式</div> <div class="note primary">这里是 primary 标签样式</div> <div class="note primary no-icon">这里是不带符号的 primary 标签样式</div> <div class="note warning">这里是 warning 标签样式</div> <div class="note warning no-icon">这里是不带符号的 warning 标签样式</div> <div class="note danger">这里是 danger 标签样式</div> <div class="note danger no-icon">这里是不带符号的 danger 标签样式</div>
+\b  单词边界
+^  字符串的开始
+$ 字符串结束
+(?=…)  环视(零宽断言) 后面的字符串符合表达式…的时候的位置
+(?!) 
 
-<h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>label<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>空<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>label label-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>label-primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>label label-info<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>label-info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>label label-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>label-success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>label label-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>label-warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>label label-danger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>label-danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+*    0到无数次
++   1到无数次
+?  0 或者1 次
+{n}  重复N次
+{n,} 重复至少N次
+ {n,m}   n到m次
+[]  字符组，字符范围
+()  捕获组（子表达式）
 
-<p>
-<span class="label">空</span>
-<span class="label label-primary">label-primary</span>
-<span class="label label-info">label-info</span>
-<span class="label label-success">label-success</span>
-<span class="label label-warning">label-warning</span>
-<span class="label label-danger">label-danger</span>
-</p>
+[0-9] 数字0到数组9之间的任意一个
+[a-z]  字母a到字母z的任意一个
+[^cfC]  除了字母cfC的任意一个字符
+[\u4e00-\u9fa5] 汉字中的任意一个汉字
+[^a-z] 除了字母 a 到字母z的任意一个字符
+[^-a-c] 除了 -  字符以及字母a到字母z的任意一个字符
+|   多选分支，或者关系
+\1 \2 … 反向引用 &lt; (\w) &gt;.*&lt;/\1&gt; 引用第一个捕获组的结果，用于匹配html的闭合标签
 
-<h4 id="代码块折叠"><a href="#代码块折叠" class="headerlink" title="代码块折叠"></a>代码块折叠</h4><pre class="line-numbers language-none"><code class="language-none">&lt;details&gt;
-  &lt;summary&gt;点击展开&lt;/summary&gt;
-  	这是展开的内容.
-&lt;/details&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+ 匹配次数中的贪婪模式(匹配字符越多越好，默认！)   
+ 匹配次数中的非贪婪模式（匹配字符越少越好，修饰匹配次数 的特殊符号后再加上一个 "?" 号）
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<details>
-  <summary>点击展开</summary>
-      这是展开的内容.
-</details>
+<h3 id="二、常用正则表达式"><a href="#二、常用正则表达式" class="headerlink" title="二、常用正则表达式"></a>二、常用正则表达式</h3><pre class="line-numbers language-none"><code class="language-none">空白行      \n\s*\r 
+首尾空白字符 ^\s*|\s*$ 
+腾讯QQ号    [1-9][0-9]{4,} 
+中国邮政编码 [1-9]\d{5}(?!\d) 
+xml文件：^([a-zA-Z]+-?)+[a-zA-Z0-9]+.[x|X][m|M][l|L]$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<pre class="line-numbers language-none"><code class="language-none">1 . 校验密码强度
 
-<h4 id="选项卡"><a href="#选项卡" class="headerlink" title="选项卡#"></a>选项卡#</h4><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+密码的强度必须是包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间。
 
+^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}$
+2. 校验中文
 
+字符串仅能是中文。
 
+^[\\u4e00-\\u9fa5]{0,}$
+3. 由数字、26个英文字母或下划线组成的字符串
 
+^\\w+$
+4. 校验E-Mail 地址
 
-<h4 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h4><pre class="line-numbers language-none"><code class="language-none">{% pdf ../pdf.pdf %}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+同密码一样，下面是E-mail地址合规性的正则检查语句。
 
+[\\w!#$%&amp;'*+/=?^_`{|}~-]+(?:\\.[\\w!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[\\w](?:[\\w-]*[\\w])?\\.)+[\\w](?:[\\w-]*[\\w])?
+5. 校验身份证号码
 
+下面是身份证号码的正则校验。15 或 18位。
 
-	<div class="row">
-    <embed src="../pdf.pdf" width="100%" height="550" type="application/pdf">
-	</div>
+15位：
+^[1-9]\\d{7}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}$
+18位：
+^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}([0-9]|X)$
+6. 校验日期
 
+“yyyy-mm-dd“ 格式的日期校验，已考虑平闰年。
 
+^(?:(?!0000)[0-9]{4}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$
+7. 校验金额
 
+金额校验，精确到2位小数。
 
-<h4 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h4><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-w-m btn-default<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>btn-default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-w-m btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>btn-primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-w-m btn-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>btn-success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-w-m btn-info<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>btn-info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-w-m btn-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>btn-warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-w-m btn-danger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>btn-danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-w-m btn-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>btn-white<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-w-m btn-link<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>btn-link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>
-    <button type="button" class="btn btn-w-m btn-default">btn-default</button>
-    <button type="button" class="btn btn-w-m btn-primary">btn-primary</button>
-    <button type="button" class="btn btn-w-m btn-success">btn-success</button>
-    <button type="button" class="btn btn-w-m btn-info">btn-info</button>
-    <button type="button" class="btn btn-w-m btn-warning">btn-warning</button>
-    <button type="button" class="btn btn-w-m btn-danger">btn-danger</button>
-    <button type="button" class="btn btn-w-m btn-white">btn-white</button>
-    <button type="button" class="btn btn-w-m btn-link">btn-link</button>
-</p>
+^[0-9]+(.[0-9]{2})?$
+8. 校验手机号
 
-<h4 id="B站视频"><a href="#B站视频" class="headerlink" title="B站视频"></a>B站视频</h4><iframe src="//player.bilibili.com/player.html?bvid=BV1Wa4y1W7z5&amp;cid=261330229&amp;page=1&amp;share_source=copy_web" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="550"></iframe>
+下面是国内 13、15、18开头的手机号正则表达式。（可根据目前国内收集号扩展前两位开头号码）
 
-<h4 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h4><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" src="//music.163.com/outchain/player?type=2&amp;id=1857630559&amp;auto=1&amp;height=66"></iframe>
+^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$
+9. 判断IE的版本
 
-<h4 id="Echarts"><a href="#Echarts" class="headerlink" title="Echarts"></a>Echarts</h4><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">{</span><span class="token operator">%</span> echarts <span class="token number">400</span> <span class="token string">'85%'</span> <span class="token operator">%</span><span class="token punctuation">}</span> 
-option <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'Referer of a Website'</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">subtext</span><span class="token operator">:</span> <span class="token string">'Fake Data'</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token string">'center'</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">tooltip</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token literal-property property">trigger</span><span class="token operator">:</span> <span class="token string">'item'</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">legend</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token literal-property property">orient</span><span class="token operator">:</span> <span class="token string">'vertical'</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token string">'left'</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">series</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Access From'</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'pie'</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">radius</span><span class="token operator">:</span> <span class="token string">'50%'</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span> <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token number">1048</span><span class="token punctuation">,</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Search Engine'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span> <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token number">735</span><span class="token punctuation">,</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Direct'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span> <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token number">580</span><span class="token punctuation">,</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Email'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span> <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token number">484</span><span class="token punctuation">,</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Union Ads'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span> <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Video Ads'</span> <span class="token punctuation">}</span>
-      <span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">emphasis</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token literal-property property">itemStyle</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-          <span class="token literal-property property">shadowBlur</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">shadowOffsetX</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">shadowColor</span><span class="token operator">:</span> <span class="token string">'rgba(0, 0, 0, 0.5)'</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">]</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token punctuation">{</span><span class="token operator">%</span> endecharts <span class="token operator">%</span><span class="token punctuation">}</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+IE目前还没被完全取代，很多页面还是需要做版本兼容，下面是IE版本检查的表达式。
 
-<div id="echarts6563" style="width: 85%;height: 400px;margin: 0 auto"></div>
-<script src="https://cdn.bootcss.com/echarts/4.3.0/echarts.common.min.js"></script>
-<script type="text/javascript">
-	// 基于准备好的dom，初始化echarts实例
-	var myChart = echarts.init(document.getElementById('echarts6563'));
-	// 指定图表的配置项和数据
-	 
+^.*MSIE [5-8](?:\\.[0-9]+)?(?!.*Trident\\/[5-9]\\.0).*$
+10. 校验IP-v4地址
 
-option = {
-  title: {
-    text: 'Referer of a Website',
-    subtext: 'Fake Data',
-    left: 'center'
-  },
-  tooltip: {
-    trigger: 'item'
-  },
-  legend: {
-    orient: 'vertical',
-    left: 'left'
-  },
-  series: [
-    {
-      name: 'Access From',
-      type: 'pie',
-      radius: '50%',
-      data: [
-        { value: 1048, name: 'Search Engine' },
-        { value: 735, name: 'Direct' },
-        { value: 580, name: 'Email' },
-        { value: 484, name: 'Union Ads' },
-        { value: 300, name: 'Video Ads' }
-      ],
-      emphasis: {
-        itemStyle: {
-          shadowBlur: 10,
-          shadowOffsetX: 0,
-          shadowColor: 'rgba(0, 0, 0, 0.5)'
-        }
-      }
-    }
-  ]
-};
+IP4 正则语句。
 
-	// 使用刚指定的配置项和数据显示图表。
-	myChart.setOption(option);
-</script> 
+\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b
 
+11. 校验IP-v6地址
 
+IP6 正则语句。
 
-<h4 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h4><pre class="line-numbers language-none"><code class="language-none">[language][title][url][link-text]
-正确姿势,代码片段开头:
-[language]是代码语言的名称,用来设置代码块颜色高亮,非必须;
-[title]是顶部左边的说明,非必须;
-[ur1]是顶部右边的超链接地址,非必须;
-[link-text]如它的字面意思,超链接的名称,非必须.
-这4项应该是根据空格来分隔,而不是[],故请不要加[].除非如果你想写后面两个，但不想写前面两个;那么就必须加了,要这样写:[] [] [url] [link-text] .
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))
+12. 检查URL的前缀
 
-<pre class="line-numbers language-java" data-language="java"><div class="caption"><span>helloworld</span><a href="https://qifengdai.github.io/">Qifeng Dai's Blog</a></div><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
-	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+应用开发中很多时候需要区分请求是HTTPS还是HTTP，通过下面的表达式可以取出一个url的前缀然后再逻辑判断。
+
+if (!s.match(/^[a-zA-Z]+:\\/\\//))
+{
+    s = 'http://' + s;
+}
+13. 提取URL链接
+
+下面的这个表达式可以筛选出一段文本中的URL。
+
+^(f|ht){1}(tp|tps):\\/\\/([\\w-]+\\.)+[\\w-]+(\\/[\\w- ./?%&amp;=]*)?
+14. 文件路径及扩展名校验
+
+验证windows下文件路径和扩展名（下面的例子中为.txt文件）
+
+^([a-zA-Z]\\:|\\\\)\\\\([^\\\\]+\\\\)*[^\\/:*?"&lt;&gt;|]+\\.txt(l)?$
+15. 提取Color Hex Codes
+
+有时需要抽取网页中的颜色代码，可以使用下面的表达式。
+
+^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$
+16. 提取网页图片
+
+假若你想提取网页中所有图片信息，可以利用下面的表达式。
+
+\\&lt; *[img][^\\\\&gt;]*[src] *= *[\\"\\']{0,1}([^\\"\\'\\ &gt;]*)
+17. 提取页面超链接
+
+提取html中的超链接。
+
+(&lt;a\\s*(?!.*\\brel=)[^&gt;]*)(href="https?:\\/\\/)((?!(?:(?:www\\.)?'.implode('|(?:www\\.)?', $follow_list).'))[^"]+)"((?!.*\\brel=)[^&gt;]*)(?:[^&gt;]*)&gt;
+18. 查找CSS属性
+
+通过下面的表达式，可以搜索到相匹配的CSS属性。
+
+^\\s*[a-zA-Z\\-]+\\s*[:]{1}\\s[a-zA-Z0-9\\s.#]+[;]{1}
+19. 抽取注释
+
+如果你需要移除HMTL中的注释，可以使用如下的表达式。
+
+&lt;!--(.*?)--&gt;
+20. 匹配HTML标签
+
+通过下面的表达式可以匹配出HTML中的标签属性。
+
+&lt;\\/?\\w+((\\s+\\w+(\\s*=\\s*(?:".*?"|'.*?'|[\\^'"&gt;\\s]+))?)+\\s*|\\s*)\\/?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -715,7 +685,7 @@ option = {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://qifengdai.github.io/post/79441da.html">https://qifengdai.github.io/post/79441da.html</a>
+                    <a href="https://qifengdai.github.io/post/469df0ac.html">https://qifengdai.github.io/post/469df0ac.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -753,8 +723,8 @@ option = {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Blog/">
-                                    <span class="chip bg-color">Blog</span>
+                                <a href="/tags/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/">
+                                    <span class="chip bg-color">开发技术</span>
                                 </a>
                             
                         </div>
@@ -1209,13 +1179,13 @@ option = {
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/a91eaa72.html">
+                <a href="/post/41262.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Git学习笔记">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="CV学习路线">
                         
-                        <span class="card-title">Git学习笔记</span>
+                        <span class="card-title">CV学习路线</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1232,8 +1202,12 @@ option = {
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/git/" class="post-category">
-                                    git
+                            <a href="/categories/AI/" class="post-category">
+                                    AI
+                                </a>
+                            
+                            <a href="/categories/AI/CV/" class="post-category">
+                                    CV
                                 </a>
                             
                             
@@ -1243,8 +1217,16 @@ option = {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/AI/">
+                        <span class="chip bg-color">AI</span>
+                    </a>
+                    
+                    <a href="/tags/CV/">
+                        <span class="chip bg-color">CV</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
+                        <span class="chip bg-color">学习路线</span>
                     </a>
                     
                 </div>
@@ -1255,16 +1237,16 @@ option = {
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/79441da.html">
+                <a href="/post/9ce757a4.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Blog各种文章格式的使用">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="远程连接服务器数据库设置">
                         
-                        <span class="card-title">Blog各种文章格式的使用</span>
+                        <span class="card-title">远程连接服务器数据库设置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1275,26 +1257,25 @@ option = {
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Blog/" class="post-category">
-                                    Blog
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Blog/">
-                        <span class="chip bg-color">Blog</span>
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
                 </div>

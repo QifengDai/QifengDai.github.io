@@ -6,7 +6,7 @@
   <link href="https://qifengdai.github.io/atom.xml" rel="self"/>
   
   <link href="https://qifengdai.github.io/"/>
-  <updated>2022-04-29T04:05:07.049Z</updated>
+  <updated>2022-04-29T12:34:37.913Z</updated>
   <id>https://qifengdai.github.io/</id>
   
   <author>
@@ -15,6 +15,327 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>overleaf和latex的论文写作</title>
+    <link href="https://qifengdai.github.io/post/edf796.html"/>
+    <id>https://qifengdai.github.io/post/edf796.html</id>
+    <published>2022-04-29T12:32:55.000Z</published>
+    <updated>2022-04-29T12:34:37.913Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、-Latex&quot;&gt;&lt;a href=&quot;#一、-Latex&quot; class=&quot;headerlink&quot; title=&quot;一、 Latex&quot;&gt;&lt;/a&gt;一、 Latex&lt;/h1&gt;&lt;p&gt;转载自[&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="overleaf" scheme="https://qifengdai.github.io/categories/overleaf/"/>
+    
+    <category term="latex" scheme="https://qifengdai.github.io/categories/overleaf/latex/"/>
+    
+    
+    <category term="overleaf" scheme="https://qifengdai.github.io/tags/overleaf/"/>
+    
+    <category term="latex" scheme="https://qifengdai.github.io/tags/latex/"/>
+    
+    <category term="论文写作" scheme="https://qifengdai.github.io/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CV学习路线</title>
+    <link href="https://qifengdai.github.io/post/41262.html"/>
+    <id>https://qifengdai.github.io/post/41262.html</id>
+    <published>2022-04-29T12:30:58.000Z</published>
+    <updated>2022-04-29T12:35:58.380Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、-基础知识&quot;&gt;&lt;a href=&quot;#一、-基础知识&quot; class=&quot;headerlink&quot; title=&quot;一、       基础知识&quot;&gt;&lt;/a&gt;一、       基础知识&lt;/h1&gt;&lt;h2 id=&quot;1-数学&quot;&gt;&lt;a href=&quot;#1-数学&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://qifengdai.github.io/categories/AI/"/>
+    
+    <category term="CV" scheme="https://qifengdai.github.io/categories/AI/CV/"/>
+    
+    
+    <category term="AI" scheme="https://qifengdai.github.io/tags/AI/"/>
+    
+    <category term="CV" scheme="https://qifengdai.github.io/tags/CV/"/>
+    
+    <category term="学习路线" scheme="https://qifengdai.github.io/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式学习</title>
+    <link href="https://qifengdai.github.io/post/469df0ac.html"/>
+    <id>https://qifengdai.github.io/post/469df0ac.html</id>
+    <published>2022-04-29T12:29:32.000Z</published>
+    <updated>2022-04-29T12:34:37.908Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;正则表达式&quot;&gt;&lt;a href=&quot;#正则表达式&quot; class=&quot;headerlink&quot; title=&quot;正则表达式&quot;&gt;&lt;/a&gt;正则表达式&lt;/h1&gt;&lt;hr&gt;
+&lt;h3 id=&quot;一、基本语法&quot;&gt;&lt;a href=&quot;#一、基本语法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="开发技术" scheme="https://qifengdai.github.io/categories/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="开发技术" scheme="https://qifengdai.github.io/tags/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>远程连接服务器数据库设置</title>
+    <link href="https://qifengdai.github.io/post/9ce757a4.html"/>
+    <id>https://qifengdai.github.io/post/9ce757a4.html</id>
+    <published>2022-04-29T12:28:27.000Z</published>
+    <updated>2022-04-29T12:34:37.909Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;远程数据库连接设置&quot;&gt;&lt;a href=&quot;#远程数据库连接设置&quot; class=&quot;headerlink&quot; title=&quot;远程数据库连接设置&quot;&gt;&lt;/a&gt;远程数据库连接设置&lt;/h1&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://qifengdai.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://qifengdai.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>修改maven为阿里云仓库</title>
+    <link href="https://qifengdai.github.io/post/397ca33b.html"/>
+    <id>https://qifengdai.github.io/post/397ca33b.html</id>
+    <published>2022-04-29T12:25:24.000Z</published>
+    <updated>2022-04-29T12:34:37.906Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;修改settings-xml改为阿里云的仓库&quot;&gt;&lt;a href=&quot;#修改settings-xml改为阿里云的仓库&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="maven" scheme="https://qifengdai.github.io/categories/maven/"/>
+    
+    
+    <category term="maven" scheme="https://qifengdai.github.io/tags/maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>服务器配置及项目部署</title>
+    <link href="https://qifengdai.github.io/post/ab8d06ed.html"/>
+    <id>https://qifengdai.github.io/post/ab8d06ed.html</id>
+    <published>2022-04-29T12:24:05.000Z</published>
+    <updated>2022-04-29T12:34:37.907Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;服务器配置及项目部署笔记&quot;&gt;&lt;a href=&quot;#服务器配置及项目部署笔记&quot; class=&quot;headerlink&quot; title=&quot;服务器配置及项目部署笔记&quot;&gt;&lt;/a&gt;服务器配置及项目部署笔记&lt;/h1&gt;&lt;hr&gt;
+&lt;h3 id=&quot;一，服务器配置（Centos）&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://qifengdai.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://qifengdai.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>maven学习笔记</title>
+    <link href="https://qifengdai.github.io/post/90a19bca.html"/>
+    <id>https://qifengdai.github.io/post/90a19bca.html</id>
+    <published>2022-04-29T12:22:57.000Z</published>
+    <updated>2022-04-29T12:34:37.905Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;maven学习笔记&quot;&gt;&lt;a href=&quot;#maven学习笔记&quot; class=&quot;headerlink&quot; title=&quot;maven学习笔记&quot;&gt;&lt;/a&gt;maven学习笔记&lt;/h1&gt;&lt;h5 id=&quot;Maven是当前最受欢迎的Java项目管理构建自动化综合工具&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="maven" scheme="https://qifengdai.github.io/categories/maven/"/>
+    
+    
+    <category term="maven" scheme="https://qifengdai.github.io/tags/maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown学习笔记</title>
+    <link href="https://qifengdai.github.io/post/d7bdf81a.html"/>
+    <id>https://qifengdai.github.io/post/d7bdf81a.html</id>
+    <published>2022-04-29T12:21:14.000Z</published>
+    <updated>2022-04-29T12:34:37.903Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MarkDown-学习笔记&quot;&gt;&lt;a href=&quot;#MarkDown-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;MarkDown 学习笔记&quot;&gt;&lt;/a&gt;MarkDown 学习笔记&lt;/h1&gt;&lt;hr&gt;
+&lt;h3 id=&quot;一，兼容-HTML&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="markdown" scheme="https://qifengdai.github.io/categories/markdown/"/>
+    
+    
+    <category term="markdown" scheme="https://qifengdai.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux学习笔记</title>
+    <link href="https://qifengdai.github.io/post/b30ceb9f.html"/>
+    <id>https://qifengdai.github.io/post/b30ceb9f.html</id>
+    <published>2022-04-29T12:19:59.000Z</published>
+    <updated>2022-04-29T12:34:37.900Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux学习笔记&quot;&gt;&lt;a href=&quot;#Linux学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Linux学习笔记&quot;&gt;&lt;/a&gt;Linux学习笔记&lt;/h1&gt;&lt;hr&gt;
+&lt;h3 id=&quot;一，文件目录&quot;&gt;&lt;a href=&quot;#一，文件目录&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://qifengdai.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://qifengdai.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java身份证验证demo</title>
+    <link href="https://qifengdai.github.io/post/6a403816.html"/>
+    <id>https://qifengdai.github.io/post/6a403816.html</id>
+    <published>2022-04-29T12:18:38.000Z</published>
+    <updated>2022-04-29T12:34:37.899Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;身份证验证&quot;&gt;&lt;a href=&quot;#身份证验证&quot; class=&quot;headerlink&quot; title=&quot;身份证验证&quot;&gt;&lt;/a&gt;身份证验证&lt;/h1&gt;&lt;hr&gt;
+&lt;pre class=&quot;line-numbers language-java&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://qifengdai.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://qifengdai.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>idea常用快捷键</title>
+    <link href="https://qifengdai.github.io/post/143da644.html"/>
+    <id>https://qifengdai.github.io/post/143da644.html</id>
+    <published>2022-04-29T12:16:49.000Z</published>
+    <updated>2022-04-29T12:34:37.904Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;IDEA快捷键&quot;&gt;&lt;a href=&quot;#IDEA快捷键&quot; class=&quot;headerlink&quot; title=&quot;IDEA快捷键&quot;&gt;&lt;/a&gt;IDEA快捷键&lt;/h1&gt;&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;ctrl + Y 删除光标所在行&lt;/li&gt;
+&lt;li&gt;ctrl + D</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://qifengdai.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://qifengdai.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git学习笔记</title>
+    <link href="https://qifengdai.github.io/post/a91eaa72.html"/>
+    <id>https://qifengdai.github.io/post/a91eaa72.html</id>
+    <published>2022-04-29T12:12:10.000Z</published>
+    <updated>2022-04-29T12:34:37.902Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;git学习笔记&quot;&gt;&lt;a href=&quot;#git学习笔记&quot; class=&quot;headerlink&quot; title=&quot;git学习笔记&quot;&gt;&lt;/a&gt;git学习笔记&lt;/h1&gt;&lt;hr&gt;
+&lt;h4 id=&quot;一，基本设置&quot;&gt;&lt;a href=&quot;#一，基本设置&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="git" scheme="https://qifengdai.github.io/categories/git/"/>
+    
+    
+    <category term="git" scheme="https://qifengdai.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>Blog各种文章格式的使用</title>

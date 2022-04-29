@@ -1,0 +1,2228 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="overleaf和latex的论文写作, DQF, python, 深度学习, Java, 后端, 学习分享">
+    <meta name="description" content="一、 Latex转载自[Here]，有删改。
+你将从这里看到
+（几乎是）最简洁的 (La)TeX 编辑器——TeXworks——的基本使用方法；
+如何使用 (Xe)LaTeX 进行简单的中英混排；
+简单的文章组织结构；
+如何用 (Xe)La">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    
+
+    <title>overleaf和latex的论文写作 | Qifeng Dai&#39;s Blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+	<link type='text/css' rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" media='all'/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Qifeng Dai's Blog" type="application/atom+xml">
+</head>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?676e4703ec8d290fa860b56960dab3a6";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo diyFont">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Qifeng Dai&#39;s Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Qifeng Dai&#39;s Blog</div>
+        <div class="logo-desc">
+            
+            每天学习一点点
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/QifengDai" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>My Github
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/QifengDai" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="My Github" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">overleaf和latex的论文写作</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/overleaf/">
+                                <span class="chip bg-color">overleaf</span>
+                            </a>
+                        
+                            <a href="/tags/latex/">
+                                <span class="chip bg-color">latex</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">
+                                <span class="chip bg-color">论文写作</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/overleaf/" class="post-category">
+                                overleaf
+                            </a>
+                        
+                            <a href="/categories/overleaf/latex/" class="post-category">
+                                latex
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-04-29
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-04-29
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    11.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    42 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="一、-Latex"><a href="#一、-Latex" class="headerlink" title="一、 Latex"></a>一、 Latex</h1><p>转载自[<a target="_blank" rel="noopener" href="https://liam.page/2014/09/08/latex-introduction/">Here</a>]，有删改。</p>
+<h2 id="你将从这里看到"><a href="#你将从这里看到" class="headerlink" title="你将从这里看到"></a>你将从这里看到</h2><ol>
+<li>（几乎是）最简洁的 (La)TeX 编辑器——TeXworks——的基本使用方法；</li>
+<li>如何使用 (Xe)LaTeX 进行简单的<strong>中英混排</strong>；</li>
+<li>简单的文章组织结构；</li>
+<li>如何用 (Xe)LaTeX 进行数学公式的排版；</li>
+<li>如何在 (Xe)LaTeX 的文档中插入图片/表格；</li>
+<li>如何进行简单的版面设置；</li>
+<li>几个最常见的带有 TeX 的单词的含义；</li>
+<li>出现问题应当如何处理/怎样聪明地提出你的问题——怎样从这里毕业。</li>
+</ol>
+<h2 id="你不会从这里看到"><a href="#你不会从这里看到" class="headerlink" title="你不会从这里看到"></a>你不会从这里看到</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://liam.page/texlive/">如何安装 TeX 发行</a>；</li>
+<li>特殊需求（特殊宏包）的解决方法；</li>
+<li>关于若干 TeX 发行的好坏比较；</li>
+<li>关于各种 TeX 编辑器的好坏比较；</li>
+<li>过多的废话。</li>
+</ol>
+<h2 id="你应当如何阅读本文"><a href="#你应当如何阅读本文" class="headerlink" title="你应当如何阅读本文"></a>你应当如何阅读本文</h2><p>事实上本文在行文过程中，会有相当多的提示帮助你以正确的方式阅读。因此有必要在此先介绍一下最常用的一些标记。</p>
+<ol>
+<li><p>斜体：使用<em>斜体</em> 意味着如果忽略掉这些文字，你可能在<em>逻辑</em> 上很难理解后面某处的知识；</p>
+</li>
+<li><p>粗体：使用<strong>粗体</strong>意味如果忽略掉这些文字，你可能在<strong>TeX 的概念</strong>上很难理解后面某处的知识；</p>
+</li>
+<li><p>粗斜体：使用*<strong>粗斜体*</strong> 基本是最重要的部分，是上述两种情况的合并；</p>
+</li>
+<li><p>引用：使用引用，</p>
+<blockquote>
+<p>表明这些文字在你第一次阅读本文的时候<em>不需要</em> 了解，其中的内容可能过于深奥，或者过于琐碎。对于第一次接触 TeX 的你（如果你是 TeX 资深使用者当然不在此列），如果了解到这些内容可能会使你困惑，并且不会从实际上增加你对 TeX 的领悟以及对 TeX 的好感。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="关于编辑器的简单介绍"><a href="#关于编辑器的简单介绍" class="headerlink" title="关于编辑器的简单介绍"></a>关于编辑器的简单介绍</h2><p>TeX 的源代码是后缀为 <code>.tex</code> 的纯文本文件。使用任意纯文本编辑器，都可以修改 <code>.tex</code> 文件：包括 Windows 自带的记事本程序，也包括专为 TeX 设计的编辑器（TeXworks, TeXmaker, TeXstudio, WinEdt 等），还包括一些通用的文本编辑器（Sublime Text, Atom, Visual Studio Code 等）。你可以在这些能够编辑纯文本文件的编辑器中任选其一作为你的 TeX 编辑器，也可以使用 TeX 发行自带的编辑器。最流行的两个 TeX 发行（TeX Live 和 MiKTeX）都带有 TeXworks 编辑器。</p>
+<blockquote>
+<p>所谓 TeX 发行，也叫 TeX 发行版、TeX 系统或者 TeX 套装，指的是包括 TeX 系统的各种可执行程序，以及他们执行时需要的一些辅助程序和宏包文档的集合。</p>
+</blockquote>
+<p>本文只介绍 TeXworks 的使用，原因有以下一些：</p>
+<ul>
+<li>TeXworks 是 TeX Live 自带的编辑器，而 TeX Live 是 TeX User Group 出品的跨平台发行版，各个操作系统都可以使用；</li>
+<li>几乎所有 TeX 发行版都带有 TeXworks；</li>
+<li>TeXworks 十分简洁，除了最基本的功能之外，没有其他复杂的东西，能使你将注意力集中在 TeX 的学习上。</li>
+</ul>
+<h3 id="启动-TeXworks"><a href="#启动-TeXworks" class="headerlink" title="启动 TeXworks"></a>启动 TeXworks</h3><p>启动 TeXworks 很简单，你可以在 Windows 启动对话框中输入 texworks 按回车。具体步骤是：</p>
+<ul>
+<li>按下键盘上的 Windows 徽标键，同时按下 R 键 —— <code>&lt;Win&gt; + R</code>;</li>
+<li>键入 <code>texworks</code>；</li>
+<li>回车。</li>
+</ul>
+<p>如果这样打不开 TeXworks，你可能需要从开始菜单找到 TeXworks 图标以启动；或者进入 TeX 系统的安装目录找到 TeXworks。</p>
+<p>启动之后，TeXworks 的界面，会默认占据你屏幕的左半边，右半边留空。效果如下图：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44dgufrnpj20iy0kimxz.jpg" alt="img"></p>
+<p>图中空白的部分，就是输入编辑文本的编辑框；在编辑框的右下角，显示有三个按钮，最左边的是换行符模式，中间是<em>编码模式</em> ，右边标示当前光标所在位置；编辑框的上方是工具栏，工具栏的右半部分使大家熟悉的功能（新建、打开、保存、撤消、恢复、剪切、复制、黏贴、查找、替换），工具栏的左边则是<em>编译按钮</em> （TeXworks 也称其为「排版工具」）；工具栏在往上，则是菜单栏，此处按下不表。</p>
+<blockquote>
+<p>Windows，Unix 等操作系统对待「换行符」是有不同的。索性 TeXworks 为我们做了足够的提示，方面我们的选择（点击一下那个按钮就知道了）。一般而言，保持默认即可。</p>
+<p>字符（包括英文字符和中文字符）在计算机中，经过编码以二进制的形式存储在计算机中。如果编辑器编码和计算机内部编码不一致，则会导致所谓「乱码」的现象。TeXworks 默认使用 UTF8 编码，在我们的文档中不需要进行任何更改，而对于一些其他的文档可能需要按照要求更改编码。</p>
+</blockquote>
+<h3 id="排版工具"><a href="#排版工具" class="headerlink" title="排版工具"></a>排版工具</h3><p>TeXworks 为我们预设了若干排版工具（pdfTeX, pdfLaTeX, XeTeX, XeLaTeX 等），本文主要用到其中的 ***XeLaTeX***。关于这些排版工具的细节，讲解起来会有些复杂。因此此处按下不表，若有兴趣，可以参看<a target="_blank" rel="noopener" href="https://liam.page/2014/09/08/latex-introduction/#TeX-%E5%AE%B6%E6%97%8F">后文</a>。当你对 TeX 系统相当熟悉之后，也可以不使用 TeXworks 预设的工具，自己配置排版工具。</p>
+<p>TeXworks 默认的排版工具是 pdfLaTeX。如果你希望更改这个默认值，可以在<em>编辑 - 首选项 - 排版 - 处理工具 - 默认</em> 中修改。</p>
+<h2 id="第一篇文档"><a href="#第一篇文档" class="headerlink" title="第一篇文档"></a>第一篇文档</h2><h3 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello, world!"></a>Hello, world!</h3><p>在编辑框中，输入如下内容：</p>
+<pre class="line-numbers language-none"><code class="language-none">helloworld.tex
+\documentclass{article}
+% 这里是导言区
+\begin{document}
+Hello, world!
+\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>将文档保存在你希望的位置，然后在排版工具的下拉选框中选中 <strong>XeLaTeX</strong> 后，按下绿色的编译按钮。一会儿，如果没有意外，屏幕的右边就会出现编译之后结果。如下图：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44e55rnkkj211y0kmwgi.jpg" alt="img"></p>
+<blockquote>
+<p>请注意，由于操作系统编码和 TeX 内部实现的限制，在 Windows 平台上，TeX 涉及到的文件（包括 <code>.tex</code>, <code>.jpg</code> 等各类文件）都不要包含中文名字。否则，在编译时可能会因为编码问题导致稀奇古怪的报错。</p>
+</blockquote>
+<p>很容易发现，输入进编辑框的五行文字，在最终输出的 pdf 档中只显示了 1 行。事实上，交付 TeX 处理的文档内容，并不会全部输出。</p>
+<p>此处的第一行 <code>\documentclass{article}</code> 中包含了一个控制序列（或称命令/标记）。所谓控制序列，是以反斜杠 <code>\</code> 开头，以第一个*<strong>空格或非字母*</strong> 的字符结束的一串文字。它们不被输出，但是他们会影响输出文档的效果。这里的控制序列是 <code>documentclass</code>，它后面紧跟着的 <code>{article}</code> 代表这个控制序列有一个必要的参数，该参数的值为 <code>article</code>。这个控制序列的作用，是调用名为 <code>article</code> 的文档类。</p>
+<p>***请注意，TeX 对控制序列的大小写是敏感的***。</p>
+<blockquote>
+<p>部分控制序列还有被方括号 <code>[]</code> 包括的可选参数。</p>
+<p>所谓文档类，即是 TeX 系统预设的（或是用户自定的）一些格式的集合。不同的文档类在输出效果上会有差别。</p>
+</blockquote>
+<p>此处的第二行以 <code>%</code> 开头。TeX 以百分号 <code>%</code> 作为注释标记。具体来说，TeX 会忽略从 <code>%</code> 开始到当前行末尾的所有内容。这些内容不会被输出，也不影响最终排版效果，只供人类阅读。若要输出 <code>%</code> 字符本身，则需要在 <code>%</code> 之前加上反斜杠 <code>\</code> 进行转义（escape）。例如：</p>
+<pre class="line-numbers language-none"><code class="language-none">今年的净利润为 20\%，比去年高。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>此处 <code>%</code> 被当做正常的百分号处理，其后的文字也将被正常输出。</p>
+<p>我们继续分析第一篇文档的内容。在注释行之后出现了控制序列 <code>begin</code>。这个控制序列总是与 <code>end</code> 成对出现。这两个控制序列以及他们中间的内容被称为「环境」；它们之后的第一个必要参数总是<strong>一致的</strong>，被称为环境名。</p>
+<p>只有在 <code>document</code> 环境中的内容，才会被正常输出到文档中去或是作为控制序列对文档产生影响。也就是说，在 <code>\end{document}</code> 之后插入任何内容都是无效的。</p>
+<p>从 <code>\documentclass{article}</code> 开始到 <code>\begin{document}</code> 之前的部分被称为导言区。你可以将导言区理解为是对整篇文档进行设置的区域——在导言区出现的控制序列，往往会影响整篇文档的格式。</p>
+<blockquote>
+<p>比如，我们通常在导言区设置页面大小、页眉页脚样式、章节标题样式等等。</p>
+</blockquote>
+<h3 id="实现中英文混排"><a href="#实现中英文混排" class="headerlink" title="实现中英文混排"></a>实现中英文混排</h3><blockquote>
+<p>关于 LaTeX 的中文支持，首先要说的是：在现在，一切教你使用 <code>CJK</code> 宏包的模板、人、网页、书，都是糟糕的、有害的、恼人的、邪恶的和应该摒弃的。</p>
+</blockquote>
+<p>成功编译输出第一个文档之后，中国 TeX 用户面临的第二个普遍问题大概就是「实现中英文混排」了。众所周知，TeX 系统是高教授开发的。在 TeX 开发当初并没有考虑到亚洲文字的问题。因此早期的 TeX 系统并不能直接支持中文，必须要用其他工具先处理一下（或者是一些宏包之类的）。但是现在，XeTeX 原生支持 Unicode，并且可以方便地调用系统字体。可以说解决了困扰中国 TeX 使用者多年的大问题。至此，我们只需要使用几个简单的宏包，就能完成中文支持了。</p>
+<p>所谓宏包，就是一系列控制序列的合集。这些控制序列太常用，以至于人们会觉得每次将他们写在导言区太过繁琐，于是将他们打包放在同一个文件中，成为所谓的宏包（台湾方面称之为「巨集套件」）。<code>\usepackage{}</code> 可以用来调用宏包。</p>
+<p>除去中文支持，中文的版式处理和标点禁则也是不小的挑战。好在由吴凌云和江疆牵头，现在主要由刘海洋、李清和我维护的 <code>CTeX</code> 宏集一次性解决了这些问题。<code>CTeX</code> 宏集的优势在于，它能适配于多种编译方式；在内部处理好了中文和中文版式的支持，隐藏了这些细节；并且，提供了不少中文用户需要的功能接口。我们来看如何使用 <code>CTeX</code> 宏集来处理中英文混排的文档。</p>
+<blockquote>
+<p>请注意，<code>CTeX</code> 宏集和 <code>CTeX</code> 套装是两个不同的东西。<code>CTeX</code> 宏集本质是 LaTeX 宏的集合，包含若干文档类（<code>.cls</code> 文件）和宏包（<code>.sty</code> 文件）。<code>CTeX</code> 套装是一个<strong>过时的</strong> TeX 系统。</p>
+<p>新版 <code>CTeX</code> 宏集的默认能够自动检测用户的操作系统，并为之配置合适的字库。对于 Windows 用户、Mac OS X 用户和 Linux 用户，都无需做任何配置，就能使用 <code>CTeX</code> 宏集来排版中文。[2015-05-20 更新]</p>
+</blockquote>
+<p>在 TeXworks 编辑框中输入以下内容，<strong>以 UTF-8 编码保存，使用 XeLaTeX 编译</strong>：</p>
+<pre class="line-numbers language-none"><code class="language-none">EC-mix.tex
+\documentclass[UTF8]{ctexart}
+\begin{document}
+你好，world!
+\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>如果没有意外，你将会看到类似下图的输出结果。</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44g5azwaej20j00kimy3.jpg" alt="img"></p>
+<p>相较于之前的例子，这份代码只有细微的差异：</p>
+<ol>
+<li>文档类从 <code>article</code> 变为 <code>ctexart</code>；</li>
+<li>增加了文档类选项 <code>UTF8</code>。</li>
+</ol>
+<blockquote>
+<p>你也可以直接使用 <code>xeCJK</code> 宏包来支持中英文混排。不过大多数情况是不推荐这样做的。因此，如果你能抑制住你小小的好奇心，可以暂时略过这一段，回头再看不迟。<code>:)</code></p>
+<p>在 TeXworks 编辑框中输入以下内容，保存，使用 XeLaTeX 编译：</p>
+<pre class="line-numbers language-none"><code class="language-none">xeCJK-demo.tex
+\documentclass{article}
+\usepackage{xeCJK} %调用 xeCJK 宏包
+\setCJKmainfont{SimSun} %设置 CJK 主字体为 SimSun （宋体）
+\begin{document}
+你好，world!
+\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<blockquote>
+<p>如果一切顺利，你将会在屏幕右边的窗口，看见类似下图的输出结果。<br><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44g5azwaej20j00kimy3.jpg" alt="img"></p>
+<p>除了 “document” 环境中同时出现了中文和英文，和最原始的 Hello, world! 不同点在于，导言区中多出了两条控制序列。他们的作用我已经用注释标出了。</p>
+<p><code>\setCJKmainfont{·}</code>是定义在 “xeCJK” 宏包中的控制序列，它可以用来设置 CJK 主字体。</p>
+<p>如果你的 TeX 系统提示找不到字体，请按以下提示操作。</p>
+<p>Mac OS X 用户请参照<a target="_blank" rel="noopener" href="https://liam.page/2014/11/02/latex-mactex-chinese-support/">这篇博客</a>中的方法，使用系统自带的字体册程序来查看系统字体。</p>
+<p>非 Mac OS X 用户请按照如下步骤打开系统命令行（*nix系统请打开终端）：</p>
+<ul>
+<li>按下<code>&lt;win&gt; + R</code>；</li>
+<li>键入<code>cmd</code>, 回车。</li>
+</ul>
+<p>在系统命令行中输入如下命令：</p>
+<pre class="line-numbers language-none"><code class="language-none">fc-list :lang=zh-cn &gt; C:\font_zh-cn.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>（相信使用 *nix 的你，一定知道如何修改上述命令达到你想要的效果）</p>
+<p>打开 C 盘根目录下的 <code>C:\font_zh-cn.txt</code> 纯文本文档，里面的内容就是你当前系统可用的全部中文字体，形如：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44gmvz7yuj20i40actcb.jpg" alt="img"></p>
+<p>每一个小黑框之间的内容，就对应着一个可用的字体。这些小黑框实际上是换行符，但是由于 Windows 系统的原因，他们没有被正常显示。如果看着不爽，你可以尝试用 TeXworks 打开这个文件查看（放心，能够打开的）。以下是我用 gVim 打开的效果：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44gpsi9fpj20km0f478v.jpg" alt="img"></p>
+<p>其中的每一行，都代表着一个可用的字体。其形式如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;字体文件路径&gt;: &lt;字体标示名1&gt;, &lt;字体表示名2&gt;:Style=&lt;字体类型&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>我们可以看到图中的倒数第四行</p>
+<pre class="line-numbers language-none"><code class="language-none">C:/WINDOWS/fonts/simsun.ttc: 宋体,SimSun:style=Regular<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>出现了之前文档里调用的字体<code>SimSun</code>，此处表明该字体有两个表示名：<code>宋体</code>和<code>SimSun</code>，我们在<code>\setCJKmainfont{·}</code>中填入任意一个都有同样的效果。</p>
+<p>因此，如果之前的文档无法编译通过，请在你的操作系统字体中，选取一个自己喜欢的，将它的字体表示名填入到<code>\setCJKmainfont{·}</code>中去。</p>
+</blockquote>
+<h2 id="组织你的文章"><a href="#组织你的文章" class="headerlink" title="组织你的文章"></a>组织你的文章</h2><h3 id="作者、标题、日期"><a href="#作者、标题、日期" class="headerlink" title="作者、标题、日期"></a>作者、标题、日期</h3><p>保存并用 XeLaTeX 编译如下文档，查看效果：</p>
+<pre class="line-numbers language-none"><code class="language-none">\documentclass[UTF8]{ctexart}
+\title{你好，world!}
+\author{Liam}
+\date{\today}
+\begin{document}
+\maketitle
+你好，world!
+\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>导言区复杂了很多，但和之前的文档主要的区别只有一处：定义了标题、作者、日期。</p>
+<p>在 <code>document</code> 环境中，除了原本的<code>你好，world!</code>，还多了一个控制序列 <code>maketitle</code>。这个控制序列能将在导言区中定义的标题、作者、日期按照预定的格式展现出来。</p>
+<blockquote>
+<p>使用<code>titling</code>宏包可以修改上述默认格式。参考<a target="_blank" rel="noopener" href="http://texdoc.net/texmf-dist/doc/latex/titling/titling.pdf">TeXdoc</a>。</p>
+</blockquote>
+<h3 id="章节和段落"><a href="#章节和段落" class="headerlink" title="章节和段落"></a>章节和段落</h3><p>保存并用 XeLaTeX 编译如下文档，查看效果：</p>
+<pre class="line-numbers language-none"><code class="language-none">\documentclass[UTF8]{ctexart}
+\title{你好，world!}
+\author{Liam}
+\date{\today}
+\begin{document}
+\maketitle
+\section{你好中国}
+中国在East Asia.
+\subsection{Hello Beijing}
+北京是capital of China.
+\subsubsection{Hello Dongcheng District}
+\paragraph{Tian'anmen Square}
+is in the center of Beijing
+\subparagraph{Chairman Mao}
+is in the center of 天安门广场。
+\subsection{Hello 山东}
+\paragraph{山东大学} is one of the best university in 山东。
+\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在文档类 <code>article</code>/<code>ctexart</code> 中，定义了五个控制序列来调整行文组织结构。他们分别是</p>
+<ul>
+<li><code>\section{·}</code></li>
+<li><code>\subsection{·}</code></li>
+<li><code>\subsubsection{·}</code></li>
+<li><code>\paragraph{·}</code></li>
+<li><code>\subparagraph{·}</code></li>
+</ul>
+<blockquote>
+<p>在<code>report</code>/<code>ctexrep</code>中，还有<code>\chapter{·}</code>；在文档类<code>book</code>/<code>ctexbook</code>中，还定义了<code>\part{·}</code>。</p>
+</blockquote>
+<h3 id="插入目录"><a href="#插入目录" class="headerlink" title="插入目录"></a>插入目录</h3><p>在上一节的文档中，找到 <code>\maketitle</code>，在它的下面插入控制序列 <code>\tableofcontents</code>，保存并用 XeLaTeX 编译<strong>两次</strong>，观察效果：</p>
+<pre class="line-numbers language-none"><code class="language-none">\documentclass[UTF8]{ctexart}
+\title{你好，world!}
+\author{Liam}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{你好中国}
+中国在East Asia.
+\subsection{Hello Beijing}
+北京是capital of China.
+\subsubsection{Hello Dongcheng District}
+\paragraph{Tian'anmen Square}
+is in the center of Beijing
+\subparagraph{Chairman Mao}
+is in the center of 天安门广场。
+\subsection{Hello 山东}
+\paragraph{山东大学} is one of the best university in 山东。
+\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>试试交换 <code>\maketitle</code> 和 <code>\tableofcontents</code> 的顺序，看看会发生什么，想想为什么。</p>
+</blockquote>
+<p>请注意，在「你好中国」这一节中，两次「中国在East Asia.」中夹有一个空行，但输出却只有一个换行并没有空行。这是因为 LaTeX 将一个换行当做是一个简单的空格来处理，如果需要换行另起一段，则需要用两个换行（一个空行）来实现。</p>
+<h2 id="插入数学公式"><a href="#插入数学公式" class="headerlink" title="插入数学公式"></a>插入数学公式</h2><p>首先恭喜你看到这里。如果前面的几个文档你都认真编译过了，那么你已经可以胜任许多文档的排版工作。下面我们进入 LaTeX 最为犀利的部分。</p>
+<p>这部分的演示中，为了节省篇幅，将取消导言区中中文支持的部分。在实际使用中，你只需要将导言区中的相关部分加上，就可以同时使用中文和编写数学公式了。</p>
+<p>为了使用 AMS-LaTeX 提供的数学功能，我们需要在导言区加载 <code>amsmath</code> 宏包：</p>
+<pre class="line-numbers language-none"><code class="language-none">\usepackage{amsmath}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="数学模式"><a href="#数学模式" class="headerlink" title="数学模式"></a>数学模式</h3><p>LaTeX 的数学模式有两种：行内模式 (inline) 和行间模式 (display)。前者在正文的行文中，插入数学公式；后者独立排列单独成行，并自动居中。</p>
+<p>在行文中，使用 <code>$ ... $</code> 可以插入行内公式，使用 <code>\[ ... \]</code> 可以插入行间公式，如果需要对行间公式进行编号，则可以使用 <code>equation</code> 环境：</p>
+<pre class="line-numbers language-none"><code class="language-none">\begin{equation}
+...
+\end{equation}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>行内公式也可以使用 <code>\(...\)</code> 或者 <code>\begin{math} ... \end{math}</code> 来插入，但略显麻烦。<br>无编号的行间公式也可以使用 <code>\begin{displaymath} ... \end{displaymath}</code> 或者 <code>\begin{equation*} ... \end{equation*}</code> 来插入，但略显麻烦。（<code>equation*</code> 中的 <code>*</code> 表示环境不编号）<br>也有 plainTeX 风格的 <code>$$ ... $$</code> 来插入不编号的行间公式。但是在 LaTeX 中这样做会改变行文的默认行间距，不推荐。请参考<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27589739/answer/37237684">我的回答</a>。</p>
+</blockquote>
+<h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><p>示例代码（请保存后，使用 XeLaTeX 编译，查看效果）：</p>
+<pre class="line-numbers language-none"><code class="language-none">\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+Einstein 's $E=mc^2$.
+
+\[ E=mc^2. \]
+
+\begin{equation}
+E=mc^2.
+\end{equation}
+\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在这里提一下关于公式标点使用的规范。行内公式和行间公式对标点的要求是不同的：行内公式的标点，应该放在数学模式的限定符之外，而行间公式则应该放在数学模式限定符之内。</p>
+<p>在数学模式中，需要表示上标，可以使用 <code>^</code> 来实现（下标则是 <code>_</code>）。<strong>它默认只作用于之后的一个字符</strong>，如果想对连续的几个字符起作用，请将这些字符用花括号 <code>{}</code> 括起来，例如：</p>
+<pre class="line-numbers language-none"><code class="language-none">\[ z = r\cdot e^{2\pi i}. \]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="根式与分式"><a href="#根式与分式" class="headerlink" title="根式与分式"></a>根式与分式</h3><p>根式用 <code>\sqrt{·}</code> 来表示，分式用 <code>\frac{·}{·}</code> 来表示（第一个参数为分子，第二个为分母）。</p>
+<p>示例代码（请保存后，使用 XeLaTeX 编译，查看效果）：</p>
+<pre class="line-numbers language-none"><code class="language-none">\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+$\sqrt{x}$, $\frac{1}{2}$.
+
+\[ \sqrt{x}, \]
+
+\[ \frac{1}{2}. \]
+\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可以发现，在行间公式和行内公式中，分式的输出效果是有差异的。如果要强制行内模式的分式显示为行间模式的大小，可以使用 <code>\dfrac</code>, 反之可以使用 <code>\tfrac</code>。</p>
+<blockquote>
+<p>在行内写分式，你可能会喜欢 <code>xfrac</code> 宏包提供的 <code>\sfrac</code> 命令的效果。</p>
+</blockquote>
+<blockquote>
+<p>排版繁分式，你应该使用 <code>\cfrac</code> 命令。</p>
+</blockquote>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>一些小的运算符，可以在数学模式下直接输入；另一些需要用控制序列生成，如</p>
+<pre class="line-numbers language-none"><code class="language-none">\[ \pm\; \times \; \div\; \cdot\; \cap\; \cup\;
+\geq\; \leq\; \neq\; \approx \; \equiv \]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>连加、连乘、极限、积分等大型运算符分别用 <code>\sum</code>, <code>\prod</code>, <code>\lim</code>, <code>\int</code> 生成。他们的上下标在行内公式中被压缩，以适应行高。我们可以用 <code>\limits</code> 和 <code>\nolimits</code> 来强制显式地指定是否压缩这些上下标。例如：</p>
+<pre class="line-numbers language-none"><code class="language-none">$ \sum_{i=1}^n i\quad \prod_{i=1}^n $
+$ \sum\limits _{i=1}^n i\quad \prod\limits _{i=1}^n $
+\[ \lim_{x\to0}x^2 \quad \int_a^b x^2 dx \]
+\[ \lim\nolimits _{x\to0}x^2\quad \int\nolimits_a^b x^2 dx \]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>多重积分可以使用 <code>\iint</code>, <code>\iiint</code>, <code>\iiiint</code>, <code>\idotsint</code> 等命令输入。</p>
+<pre class="line-numbers language-none"><code class="language-none">\[ \iint\quad \iiint\quad \iiiint\quad \idotsint \]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="定界符（括号等）"><a href="#定界符（括号等）" class="headerlink" title="定界符（括号等）"></a>定界符（括号等）</h3><p>各种括号用 <code>()</code>, <code>[]</code>, <code>\{\}</code>, <code>\langle\rangle</code> 等命令表示；注意花括号通常用来输入命令和环境的参数，所以在数学公式中它们前面要加 <code>\</code>。因为 LaTeX 中 <code>|</code> 和 <code>\|</code> 的应用过于随意，amsmath 宏包推荐用 <code>\lvert\rvert</code> 和 <code>\lVert\rVert</code> 取而代之。</p>
+<p>为了调整这些定界符的大小，amsmath 宏包推荐使用 <code>\big</code>, <code>\Big</code>, <code>\bigg</code>, <code>\Bigg</code> 等一系列命令放在上述括号前面调整大小。</p>
+<blockquote>
+<p>有时你可能会觉得 amsmath 宏包提供的定界符放大命令不太够用。通常这意味着你的公式太过复杂。此时你应当首先考虑将公式中的部分提出去，以字母符号代替以简化公式。如果你真的想要排版如此复杂的公式，你可以参考我<a target="_blank" rel="noopener" href="https://liam.page/2018/11/09/the-bigger-than-bigger-delimiter-in-LaTeX/">这篇博文</a>。</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">\[ \Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr) \]
+\[ \Biggl[\biggl[\Bigl[\bigl[[x]\bigr]\Bigr]\biggr]\Biggr] \]
+\[ \Biggl \{\biggl \{\Bigl \{\bigl \{\{x\}\bigr \}\Bigr \}\biggr \}\Biggr\} \]
+\[ \Biggl\langle\biggl\langle\Bigl\langle\bigl\langle\langle x
+\rangle\bigr\rangle\Bigr\rangle\biggr\rangle\Biggr\rangle \]
+\[ \Biggl\lvert\biggl\lvert\Bigl\lvert\bigl\lvert\lvert x
+\rvert\bigr\rvert\Bigr\rvert\biggr\rvert\Biggr\rvert \]
+\[ \Biggl\lVert\biggl\lVert\Bigl\lVert\bigl\lVert\lVert x
+\rVert\bigr\rVert\Bigr\rVert\biggr\rVert\Biggr\rVert \]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44jk66wwfj204x0a4aa0.jpg" alt="img"></p>
+<h3 id="省略号"><a href="#省略号" class="headerlink" title="省略号"></a>省略号</h3><p>省略号用 <code>\dots</code>, <code>\cdots</code>, <code>\vdots</code>, <code>\ddots</code> 等命令表示。<code>\dots</code> 和 <code>\cdots</code> 的纵向位置不同，前者一般用于有下标的序列。</p>
+<pre class="line-numbers language-none"><code class="language-none">\[ x_1,x_2,\dots ,x_n\quad 1,2,\cdots ,n\quad
+\vdots\quad \ddots \]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><p><code>amsmath</code> 的 <code>pmatrix</code>, <code>bmatrix</code>, <code>Bmatrix</code>, <code>vmatrix</code>, <code>Vmatrix</code> 等环境可以在矩阵两边加上各种分隔符。</p>
+<pre class="line-numbers language-none"><code class="language-none">\[ \begin{pmatrix} a&amp;b\\c&amp;d \end{pmatrix} \quad
+\begin{bmatrix} a&amp;b\\c&amp;d \end{bmatrix} \quad
+\begin{Bmatrix} a&amp;b\\c&amp;d \end{Bmatrix} \quad
+\begin{vmatrix} a&amp;b\\c&amp;d \end{vmatrix} \quad
+\begin{Vmatrix} a&amp;b\\c&amp;d \end{Vmatrix} \]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果图：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44jpqbz2aj208k024744.jpg" alt="img"></p>
+<p>使用 <code>smallmatrix</code> 环境，可以生成行内公式的小矩阵。</p>
+<pre class="line-numbers language-none"><code class="language-none">Marry has a little matrix $ ( \begin{smallmatrix} a&amp;b\\c&amp;d \end{smallmatrix} ) $.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>效果图：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44jsd9ldbj20680200si.jpg" alt="img"></p>
+<h3 id="多行公式"><a href="#多行公式" class="headerlink" title="多行公式"></a>多行公式</h3><p>有的公式特别长，我们需要手动为他们换行；有几个公式是一组，我们需要将他们放在一起；还有些类似分段函数，我们需要给它加上一个左边的花括号。</p>
+<h4 id="长公式"><a href="#长公式" class="headerlink" title="长公式"></a>长公式</h4><h5 id="不对齐"><a href="#不对齐" class="headerlink" title="不对齐"></a>不对齐</h5><p>无须对齐的长公式可以使用 <code>multline</code> 环境。</p>
+<pre class="line-numbers language-none"><code class="language-none">\begin{multline}
+x = a+b+c+{} \\
+d+e+f+g
+\end{multline}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44jzfychej20dv02sjr6.jpg" alt="img"></p>
+<p>如果不需要编号，可以使用 <code>multline*</code> 环境代替。</p>
+<h5 id="对齐"><a href="#对齐" class="headerlink" title="对齐"></a>对齐</h5><p>需要对齐的公式，可以使用 <code>aligned</code> <em>次环境</em>来实现，它必须包含在数学环境之内。</p>
+<pre class="line-numbers language-none"><code class="language-none">\[\begin{aligned}
+x ={}&amp; a+b+c+{} \\
+&amp;d+e+f+g
+\end{aligned}\]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果图：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44k2acde4j205g02ft8h.jpg" alt="img"></p>
+<h4 id="公式组"><a href="#公式组" class="headerlink" title="公式组"></a>公式组</h4><p>无需对齐的公式组可以使用 <code>gather</code> 环境，需要对齐的公式组可以使用 <code>align</code> 环境。他们都带有编号，如果不需要编号可以使用带星花的版本。</p>
+<pre class="line-numbers language-none"><code class="language-none">\begin{gather}
+a = b+c+d \\
+x = y+z
+\end{gather}
+\begin{align}
+a &amp;= b+c+d \\
+x &amp;= y+z
+\end{align}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44k5od3xaj209u04lweb.jpg" alt="img"></p>
+<blockquote>
+<p>请注意，不要使用 <code>eqnarray</code> 环境。原因可以参考：</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.math.uiuc.edu/~hildebr/tex/displays.html"><code>eqnarray</code> 是糟糕的</a></li>
+<li><a target="_blank" rel="noopener" href="http://texblog.net/latex-archive/maths/eqnarray-align-environment/"><code>eqnarray</code> 是有害的</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.tex.ac.uk/cgi-bin/texfaq2html?label=eqnarray"><code>eqnarray</code> 是恼人的</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.tug.org/pracjourn/2006-4/madsen/"><code>eqnarray</code> 是邪恶的</a></li>
+</ul>
+</blockquote>
+<h4 id="分段函数"><a href="#分段函数" class="headerlink" title="分段函数"></a>分段函数</h4><p>分段函数可以用<code>cases</code>次环境来实现，它必须包含在数学环境之内。</p>
+<pre class="line-numbers language-none"><code class="language-none">\[ y= \begin{cases}
+-x,\quad x\leq 0 \\
+x,\quad x&gt;0
+\end{cases} \]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果图：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44k7zto1wj205o01pt8i.jpg" alt="img"></p>
+<h3 id="辅助工具"><a href="#辅助工具" class="headerlink" title="辅助工具"></a>辅助工具</h3><p>站在我个人的角度，我建议 LaTeX 用户应当尽可能避免使用辅助工具输入数学公式。但对于急用的初学者而言，适当地使用辅助工具（而不形成依赖）也是有一些收益的。因此这里介绍一些关于数学公式的辅助工具。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mathpix.com/">https://mathpix.com/</a> 能够通过热键呼出截屏，而后将截屏中的公式转换成 LaTeX 数学公式的代码。</li>
+<li><a target="_blank" rel="noopener" href="http://detexify.kirelabs.org/classify.html">http://detexify.kirelabs.org/classify.html</a> 允许用户用鼠标在输入区绘制单个数学符号的样式，系统会根据样式返回对应的 LaTeX 代码（和所需的宏包）。这在查询不熟悉的数学符号时特别有用。</li>
+</ul>
+<h2 id="插入图片和表格"><a href="#插入图片和表格" class="headerlink" title="插入图片和表格"></a>插入图片和表格</h2><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>关于 LaTeX 插图，首先要说的是：「LaTeX 只支持 <code>.eps</code> 格式的图档」这个说法是错误的。</p>
+<p>在 LaTeX 中插入图片，有很多种方式。最好用的应当属利用 <code>graphicx</code> 宏包提供的 <code>\includegraphics</code> 命令。比如你在你的 TeX 源文件同目录下，有名为 <code>a.jpg</code> 的图片，你可以用这样的方式将它插入到输出文档中：</p>
+<pre class="line-numbers language-none"><code class="language-none">\documentclass{article}
+\usepackage{graphicx}
+\begin{document}
+\includegraphics{a.jpg}
+\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>图片可能很大，超过了输出文件的纸张大小，或者干脆就是你自己觉得输出的效果不爽。这时候你可以用 <code>\includegraphics</code> 控制序列的可选参数来控制。比如</p>
+<pre class="line-numbers language-none"><code class="language-none">\includegraphics[width = .8\textwidth]{a.jpg}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>这样图片的宽度会被缩放至页面宽度的百分之八十，图片的总高度会按比例缩放。</p>
+<blockquote>
+<p><code>\includegraphics</code> 控制序列还有若干其他的可选参数可供使用，一般并用不到。感兴趣的话，可以去查看<a target="_blank" rel="noopener" href="http://texdoc.net/texmf-dist/doc/latex/graphics/graphicx.pdf">该宏包的文档</a>。</p>
+</blockquote>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p><code>tabular</code> 环境提供了最简单的表格功能。它用 <code>\hline</code> 命令表示横线，在列格式中用 <code>|</code> 表示竖线；用 <code>&amp;</code> 来分列，用 <code>\\</code> 来换行；每列可以采用居左、居中、居右等横向对齐方式，分别用 <code>l</code>、<code>c</code>、<code>r</code> 来表示。</p>
+<pre class="line-numbers language-none"><code class="language-none">\begin{tabular}{|l|c|r|}
+ \hline
+操作系统&amp; 发行版&amp; 编辑器\\
+ \hline
+Windows &amp; MikTeX &amp; TexMakerX \\
+ \hline
+Unix/Linux &amp; teTeX &amp; Kile \\
+ \hline
+Mac OS &amp; MacTeX &amp; TeXShop \\
+ \hline
+通用&amp; TeX Live &amp; TeXworks \\
+ \hline
+\end{tabular}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果：</p>
+<p><img src="https://liam.page/uploads/teaching/LaTeX/figures/818901c1jw1e44ku9n696j20cj05haad.jpg" alt="img"></p>
+<h3 id="浮动体"><a href="#浮动体" class="headerlink" title="浮动体"></a>浮动体</h3><p>插图和表格通常需要占据大块空间，所以在文字处理软件中我们经常需要调整他们的位置。<code>figure</code> 和 <code>table</code> 环境可以自动完成这样的任务；这种自动调整位置的环境称作浮动体(float)。我们以 <code>figure</code> 为例。</p>
+<pre class="line-numbers language-none"><code class="language-none">\begin{figure}[htbp]
+\centering
+\includegraphics{a.jpg}
+\caption{有图有真相}
+\label{fig:myphoto}
+\end{figure}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>htbp</code> 选项用来指定插图的理想位置，这几个字母分别代表 here, top, bottom, float page，也就是就这里、页顶、页尾、浮动页（专门放浮动体的单独页面或分栏）。<code>\centering</code> 用来使插图居中；<code>\caption</code> 命令设置插图标题，LaTeX 会自动给浮动体的标题加上编号。注意 <code>\label</code> 应该放在标题命令之后。</p>
+<blockquote>
+<p>图片和表格的各种特殊效果，限于篇幅此处无法详叙。请查看最后一章推荐的文档。</p>
+<p>如果你想了解 LaTeX 的浮动体策略算法细节，你可以参考我博客中<a target="_blank" rel="noopener" href="https://liam.page/series/#LaTeX-%E4%B8%AD%E7%9A%84%E6%B5%AE%E5%8A%A8%E4%BD%93">关于浮动体的系列文章</a></p>
+<p>如果你困惑于「为什么图表会乱跑」或者「怎样让图表不乱跑」，请看<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/25082703/answer/30038248">我的回答</a>。</p>
+</blockquote>
+<h2 id="版面设置"><a href="#版面设置" class="headerlink" title="版面设置"></a>版面设置</h2><h3 id="页边距"><a href="#页边距" class="headerlink" title="页边距"></a>页边距</h3><p>设置页边距，推荐使用 <code>geometry</code> 宏包。可以在<a target="_blank" rel="noopener" href="http://texdoc.net/texmf-dist/doc/latex/geometry/geometry.pdf">这里</a>查看它的说明文档。</p>
+<p>比如我希望，将纸张的长度设置为 20cm、宽度设置为 15cm、左边距 1cm、右边距 2cm、上边距 3cm、下边距 4cm，可以在导言区加上这样几行：</p>
+<pre class="line-numbers language-none"><code class="language-none">\usepackage{geometry}
+\geometry{papersize={20cm,15cm}}
+\geometry{left=1cm,right=2cm,top=3cm,bottom=4cm}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="页眉页脚"><a href="#页眉页脚" class="headerlink" title="页眉页脚"></a>页眉页脚</h3><p>设置页眉页脚，推荐使用 <code>fancyhdr</code> 宏包。可以在<a target="_blank" rel="noopener" href="http://texdoc.net/texmf-dist/doc/latex/fancyhdr/fancyhdr.pdf">这里</a>查看它的说明文档。</p>
+<p>比如我希望，在页眉左边写上我的名字，中间写上今天的日期，右边写上我的电话；页脚的正中写上页码；页眉和正文之间有一道宽为 0.4pt 的横线分割，可以在导言区加上如下几行：</p>
+<pre class="line-numbers language-none"><code class="language-none">\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\author}
+\chead{\date}
+\rhead{152xxxxxxxx}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headwidth}{\textwidth}
+\renewcommand{\footrulewidth}{0pt}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="首行缩进"><a href="#首行缩进" class="headerlink" title="首行缩进"></a>首行缩进</h3><p>CTeX 宏集已经处理好了首行缩进的问题（自然段前空两格汉字宽度）。因此，使用 CTeX 宏集进行中西文混合排版时，我们不需要关注首行缩进的问题。</p>
+<blockquote>
+<p>如果你因为某些原因选择不适用 CTeX 宏集（不推荐）进行中文支持和版式设置，则你需要做额外的一些工作。</p>
+<ul>
+<li>调用 <code>indentfirst</code> 宏包。具体来说，中文习惯于每个自然段的段首都空出两个中文汉字的长度作为首行缩进，但西文行文习惯于不在逻辑节（<code>\section</code> 等）之后缩进。使用改宏包可使 LaTeX 在每个自然段都首行缩进。</li>
+<li>设置首行缩进长度 <code>\setlength{\parindent}{2\ccwd}</code>。其中 <code>\ccwd</code> 是 <code>xeCJK</code> 定义的宏，它表示当前字号中一个中文汉字的宽度。</li>
+</ul>
+</blockquote>
+<h3 id="行间距"><a href="#行间距" class="headerlink" title="行间距"></a>行间距</h3><p>我们可以通过 <code>setspace</code> 宏包提供的命令来调整行间距。比如在导言区添加如下内容，可以将行距设置为字号的 1.5 倍：</p>
+<pre class="line-numbers language-none"><code class="language-none">\usepackage{setspace}
+\onehalfspacing<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>具体可以查看该宏包的<a target="_blank" rel="noopener" href="http://texdoc.net/texmf-dist/doc/latex/setspace/README">文档</a>。</p>
+<blockquote>
+<p>请注意用词的差别：</p>
+<ul>
+<li>行距是字号的 1.5 倍；</li>
+<li>1.5 倍行距。</li>
+</ul>
+<p>事实上，这不是设置 1.5 倍行距的正确方法，请参考<a target="_blank" rel="noopener" href="https://liam.page/2013/10/17/LaTeX-Linespace/">这篇博文</a>。另外，<a target="_blank" rel="noopener" href="https://github.com/RuixiZhang42">RuixiZhang</a> 开发了 <a target="_blank" rel="noopener" href="https://github.com/CTeX-org/ctex-kit/tree/master/zhlineskip">zhlineskip</a> 宏包，提供了对中西文混排更细致的行距控制能力。</p>
+</blockquote>
+<h3 id="段间距"><a href="#段间距" class="headerlink" title="段间距"></a>段间距</h3><p>我们可以通过修改长度 <code>\parskip</code> 的值来调整段间距。例如在导言区添加以下内容</p>
+<pre class="line-numbers language-none"><code class="language-none">\addtolength{\parskip}{.4em}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>则可以在原有的基础上，增加段间距 0.4em。如果需要减小段间距，只需将该数值改为负值即可。</p>
+<h2 id="TeX-家族"><a href="#TeX-家族" class="headerlink" title="TeX 家族"></a>TeX 家族</h2><p>恭喜你终于看到了这里。如果你认真完成了上面所有的练习，并琢磨了其中的意义，相信你已经可以用 LaTeX 排版出漂亮的文档了。现在我们说一点历史，帮助你更好地理解 TeX 这个系统。</p>
+<p>带有 TeX 的词，仅仅是本文就已经提到了 TeX, LaTeX, XeLaTeX。通常中国学生面对不了解意思的一群形近单词，都会有一种「本能的恐惧」（笑~）。因此，「大神们」在为新手介绍 TeX 的时候，如果互相争论 「XXTeX 比 YYTeX 好」或者是「XXTeX 的 YYTeX 如何如何」，往往会蹦出下面这些带有 TeX 的词汇：<br>TeX, pdfTeX, XeTeX, LuaTeX, LaTeX, pdfLaTeX, XeLaTeX …</p>
+<p>事实上，这部分的内容太过复杂，我自己的了解也实在有限。所以下面这部分的内容也只能是对我了解到的知识的一个概括，甚至可能有些许谬误。所以大家只需要将这部分的内容当做是一个参考就可以了。</p>
+<h3 id="TeX-LaTeX"><a href="#TeX-LaTeX" class="headerlink" title="TeX - LaTeX"></a>TeX - LaTeX</h3><p>TeX 是高德纳（Donald Ervin Knuth，1938年1月10日 –）教授<del>愤世嫉俗</del>追求完美做出来的排版引擎，同时也是该引擎使用的标记语言（Markup Language）的名称。这里所谓的引擎，是指能够实现断行、分页等操作的程序（请注意这并不是定义）；这里的标记语言，是指一种将控制命令和文本结合起来的格式，它的主体是其中的文本而控制命令则实现一些特殊效果（同样请注意这并不是定义）。</p>
+<blockquote>
+<p>你可以在<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/TeX">这里</a>找到关于 TeX 引擎的具体描述；</p>
+<p>你可以在<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Markup_language">这里</a>找到关于标记语言的具体描述。</p>
+</blockquote>
+<p>而 LaTeX 则是 L. Lamport （1941年2月7日 – ） 教授开发的基于 TeX 的排版系统。实际上 LaTeX 利用 TeX 的控制命令，定义了许多新的控制命令并封装成一个可执行文件。这个可执行文件会去解释 LaTeX 新定义的命令成为 TeX 的控制命令，并最终交由 TeX 引擎进行排版。</p>
+<blockquote>
+<p>实际上，LaTeX 是基于一个叫做 plain TeX 的格式的。plain TeX 是高德纳教授为了方便用户，自己基于原始的 TeX 定义的格式，但实际上 plain TeX 的命令仍然十分晦涩。至于原始的 TeX 直接使用的人就更少了，因此 plain TeX 格式逐渐就成为了 TeX 格式的同义词，尽管他们事实上是不同的。</p>
+</blockquote>
+<p>因此在 TeX - LaTeX 组合中，</p>
+<ol>
+<li>最终进行断行、分页等操作的，是 TeX 引擎；</li>
+<li>LaTeX 实际上是一个工具，它将用户按照它的格式编写的文档解释成 TeX 引擎能理解的形式并交付给 TeX 引擎处理，再将最终结果返回给用户。</li>
+</ol>
+<h3 id="pdfTeX-pdfLaTeX"><a href="#pdfTeX-pdfLaTeX" class="headerlink" title="pdfTeX - pdfLaTeX"></a>pdfTeX - pdfLaTeX</h3><p>TeX 系统生成的文件是 <em>dvi</em> 格式，虽然可以用其他程序将其转换为例如 pdf 等更为常见的格式，但是毕竟不方便。</p>
+<blockquote>
+<p>dvi 格式是为了排版而产生的，它本身并不支持所谓的「交叉引用」，pdfTeX 直接输出 pdf 格式的文档，这也是 pdfTeX 相对 TeX 进步（易用性方面）的地方。</p>
+</blockquote>
+<p>为了解决这个问题，Hàn Thế Thành 博士在他的博士论文中提出了 pdfTeX 这个对 TeX 引擎的扩展。二者最主要的差别就是 pdfTeX 直接输出 pdf 格式文档，而 TeX 引擎则输出 dvi 格式的文档。</p>
+<blockquote>
+<p>pdfTeX 的信息可以查看<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/PdfTeX">wiki</a>.</p>
+</blockquote>
+<p>pdfLaTeX 这个程序的主要工作依旧是将 LaTeX 格式的文档进行解释，不过此次是将解释之后的结果交付给 pdfTeX 引擎处理。</p>
+<h3 id="XeTeX-XeLaTeX"><a href="#XeTeX-XeLaTeX" class="headerlink" title="XeTeX - XeLaTeX"></a>XeTeX - XeLaTeX</h3><p>高德纳教授在实现 TeX 的当初并没有考虑到中日韩等字符的处理，而只支持 ASCII 字符。这并不是说中日韩字符就无法使用 TeX 引擎排版了，事实上 TeX 将每个字符用一个框包括起来（这被称为<strong>盒子</strong>）然后将一个个的盒子按照一定规则排列起来，因而 TeX 的算法理论上适用于任何字符。ASCII 字符简单理解，就是在半角模式下你的键盘能直接输出的字符。</p>
+<p>在 XeTeX 出现之前，为了能让 TeX 系统排版中文，国人曾使用了 天元、CCT、<strong>CJK</strong> 等手段处理中文。其中 天元和CCT 现在已经基本不用，CJK 因为使用时间长且效果相对较好，现在还有人使用。</p>
+<p>不同于 CJK 等方式使用 TeX 和 pdfTeX 这两个不直接支持 Unicode 字符的引擎，XeTeX 引擎直接支持 Unicode 字符。也就是说现在不使用 CJK 也能排版中日韩文的文档了，并且这种方式要比之前的方式更加优秀。</p>
+<p>XeLaTeX 和 XeTeX 的关系与 pdfLaTeX 和 pdfTeX 的关系类似，这里不再赘述。</p>
+<p>使用 XeTeX 引擎需要使用 UTF-8 编码。</p>
+<blockquote>
+<p>所谓编码就是字符在计算机储存时候的对应关系。例如，假设有一种编码，将汉字「你」对应为数字「1」；「好」对应为数字「2」，则含有「你好」的纯文本文件，在计算机中储存为「12」（读取文件的时候，将「12」再转换为「你好」显示在屏幕上或打印出来）。</p>
+<p>UTF-8 编码是 Unicode 编码的一种，可以参考它的 <a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/UTF-8">wiki</a>.</p>
+</blockquote>
+<h3 id="LuaTeX"><a href="#LuaTeX" class="headerlink" title="LuaTeX"></a>LuaTeX</h3><p>LuaTeX 是正在开发完善的一个 TeX 引擎，相对它的前辈们还相当的不完善，这里不赘述。</p>
+<h3 id="CTeX-MiKTeX-TeX-Live"><a href="#CTeX-MiKTeX-TeX-Live" class="headerlink" title="CTeX - MiKTeX - TeX Live"></a>CTeX - MiKTeX - TeX Live</h3><p>之前介绍了 TeX, LaTeX, pdfTeX, pdfLaTeX, XeTeX, XeLaTeX, LuaTeX 等，他们都是 TeX 家族的一部分。但是作为一个能够使用的 TeX 系统，仅仅有他们还是不够的。CTeX, MiKTeX, TeX Live 都是被称为「发行」的软件合集。他们包括了上述各种引擎的可执行程序，以及一些文档类、模板、字体文件、辅助程序等等。其中 CTeX 是建立在 MiKTeX 的基础之上的。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>TeX - pdfTeX - XeTeX - LuaTeX 都是排版引擎，按照先进程度递增（LuaTeX 尚未完善）。</p>
+<p>LaTeX 是一种格式，基于 TeX 格式定义了很多更方便使用的控制命令。上述四个引擎都有对应的程序将 LaTeX 格式解释成引擎能处理的内容。</p>
+<p>CTeX, MiKTeX, TeX Live 都是 TeX 的发行，他们是许许多多东西的集合。</p>
+<h2 id="出现问题应当如何处理-x2F-怎样聪明地提出你的问题——怎样从这里毕业"><a href="#出现问题应当如何处理-x2F-怎样聪明地提出你的问题——怎样从这里毕业" class="headerlink" title="出现问题应当如何处理/怎样聪明地提出你的问题——怎样从这里毕业"></a>出现问题应当如何处理/怎样聪明地提出你的问题——怎样从这里毕业</h2><p>这篇文章原来的名字叫做<strong>慢慢爱上 LaTeX</strong>，后来行文的过程中发觉 LaTeX 实在是有太多的内容可以讲述，越发地没有把握让大家仅仅通过这一篇短小的文章就喜欢上 LaTeX，于是改成了现在这个名字。</p>
+<p>限于篇幅，还有我的精力，这篇文章事实上还有许多的问题没有讲明白。它仅仅是提供了一些，在你学习使用 LaTeX 可能遇到的问题的解决方案，并不完全，而且没有教会你如何处理编译过程中可能遇到的形形色色的错误。<br>所以这最终只能是一篇小文，而不可能成为一篇正式的文档。</p>
+<p>因此，如果通过我这篇小文，体验到了 LaTeX 带给你的一些乐趣，有了对 LaTeX 的兴趣（如果是这样，我就已经能够无比开心了~），请务必去阅读一些正式的 LaTeX 文档。</p>
+<h3 id="去读文档"><a href="#去读文档" class="headerlink" title="去读文档"></a>去读文档</h3><p>关于 LaTeX 的文档有很多，其中有些内容过时地很快。所以有必要告诉大家，哪些文档应该看，那些文档不应该看。索性，这个问题，刘海洋(milksea)前辈已经叙述得很清楚了。前段时间，我和几个朋友，将现在看起来还未过时的文档打包上传到了我的博客。参考：<a target="_blank" rel="noopener" href="https://liam.page/attachment/attachment/LaTeX-useful-tools/LaTeX_Docs_2014.zip">ZIP 归档</a>。</p>
+<h3 id="遇到问题怎么办"><a href="#遇到问题怎么办" class="headerlink" title="遇到问题怎么办"></a>遇到问题怎么办</h3><ol>
+<li>绝对的新手，先读完一本入门读物，了解基本的知识；</li>
+<li>无论如何，先读文档！绝大部分问题都是文档可以解决的；</li>
+<li>利用 Google 搜索你的问题；</li>
+<li>在各个论坛或者 LaTeX 交流群里聪明地提出你的问题。</li>
+</ol>
+<h1 id="二、overleaf"><a href="#二、overleaf" class="headerlink" title="二、overleaf"></a>二、overleaf</h1><p>转载自[<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_37201243/article/details/120170141">Here</a>]，有删改。</p>
+<p>Overleaf是一个使用LaTeX进行多人协同编辑的平台，可以免费注册和使用，不用下载LaTeX软件，是最为著名的LaTeX在线协作系统。主要特色是有LaTeX插件，编辑功能十分完善，有实时预览（即编即看，无需手动编译）的功能。科研工作者可以在各大期刊的网站上下载到其Overleaf模板，进行论文写作（不同模板的排版方式（比如“作者”和“地址”）的格式不同）。在注册Overleaf后会有详细的指引，在此不再赘述，平台是纯英文的，需要使用者适应，这也是科研工作者的必备素质。</p>
+<h2 id="overleaf详细使用"><a href="#overleaf详细使用" class="headerlink" title="overleaf详细使用"></a>overleaf详细使用</h2><p>通畅而言，使用overleaf撰写自己的论文，是从模板开始的，这里不细说怎么构造一个模板文件。因为大多数期刊或者会议都提供了latex模板文件，有的直接分享了overleaf模板项目，例如TACL期刊（<a target="_blank" rel="noopener" href="https://www.overleaf.com/project/5b43a7865f51ce16d2593cac%EF%BC%89%EF%BC%8C%E6%9C%89%E7%9A%84%E5%88%99%E6%8F%90%E4%BE%9B%E4%BA%86%E6%96%87%E4%BB%B6%EF%BC%8C%E4%BE%8B%E5%A6%82AAAI%E4%BC%9A%E8%AE%AE%EF%BC%88https://www.aaai.org/Publications/Templates/AuthorKit22.zip%EF%BC%89%E3%80%82">https://www.overleaf.com/project/5b43a7865f51ce16d2593cac），有的则提供了文件，例如AAAI会议（https://www.aaai.org/Publications/Templates/AuthorKit22.zip）。</a></p>
+<h2 id="处理share链接"><a href="#处理share链接" class="headerlink" title="处理share链接"></a>处理share链接</h2><p>点击分享的链接并登陆账号，然后再返回overleaf主菜单，找到<code>Shared with you</code>菜单栏，然后选择对应的项目，点击右边的Cpoy按钮(如下图所示)，复制为自己的项目，即可开始论文写作。</p>
+<p><img src="https://img-blog.csdnimg.cn/73688a707ebf49b3a422e614b88c349b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAWWlyb25nQ2hlbg==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center"></p>
+<h2 id="处理文件压缩包"><a href="#处理文件压缩包" class="headerlink" title="处理文件压缩包"></a>处理文件压缩包</h2><p>首先，确保自己从期刊或者会议官网获得的模板是.zip格式的压缩包，且压缩包内只有latex文件。有的模板压缩包文件把word模板和latex模板放在一个压缩包（例如AAAI会议），此时，需要我们手动把仅包含latex模板的文件夹重新打包为.zip文件，然后上传到overleaf即可。</p>
+<h2 id="overleaf常见功能"><a href="#overleaf常见功能" class="headerlink" title="overleaf常见功能"></a>overleaf常见功能</h2><p>我们打开一个latex项目后，在overleaf中显示如下，左边是菜单栏、项目目录以及.tex文件的目录索引。</p>
+<p><img src="https://img-blog.csdnimg.cn/d45bf56ba204413f9490ff07398646d9.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAWWlyb25nQ2hlbg==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center"></p>
+<p>其中，点击菜单按钮<code>Menu</code>，可以看到如下功能选项，下拉会有更多的功能，这里不详细介绍了，但是，需要注意的是<code>Settings</code>菜单，可以选择不同的编译器以及编译器版本。不少会议会指定使用的编译器以及版本，所以最好在写作之前根据要求检查一遍（例如AAAI会议就指定使用pdfLaTex编译器）：</p>
+<p><img src="https://img-blog.csdnimg.cn/6797bf5c27554d09ba4be35b21f4668f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAWWlyb25nQ2hlbg==,size_17,color_FFFFFF,t_70,g_se,x_16#pic_center"></p>
+<h2 id="一个Latex项目的构成"><a href="#一个Latex项目的构成" class="headerlink" title="一个Latex项目的构成"></a>一个Latex项目的构成</h2><p>通常来说，一个Latex项目包括：</p>
+<ul>
+<li><p>图片文件夹（建议创建一个文件夹用于存放图片，这样图片文件和其他文件有明显的区分度），通常建议大家创建一个命名为<code>figure</code>的文件夹，把图片都存放到这个位置。</p>
+</li>
+<li><p>参考文献格式文件<code>.bst</code>，这个文件我们通常不能做任何修改，因为它通常由会议或者期刊确定好的。</p>
+</li>
+<li><p>样式文件<code>.tsy</code>，这个文件也不能做任何修改，但是我们需要详细阅读，因为它可能重新定义了各类排版命令，并且指定了排版的字体、边距等等。</p>
+</li>
+<li><p>参考文献信息存放文件<code>.bib</code>，这个文件通常存放我们要引用的文献信息，需要注意的是，文献信息是latex专用格式，通常可以从期刊网站、google等地方直接得到，复制粘贴到该文件里面即可。</p>
+</li>
+<li><p>论文主内容文件<code>.tex</code>，这个文件存放我们撰写的论文内容，编译器编译后会根据该文件生成pdf文件。</p>
+</li>
+</ul>
+<h2 id="tex文件的基本架构"><a href="#tex文件的基本架构" class="headerlink" title=".tex文件的基本架构"></a>.tex文件的基本架构</h2><p>通常来说，一个.tex文件会呈现如下形式：</p>
+<pre class="line-numbers language-latex" data-language="latex"><code class="language-latex"><span class="token comment">% 定义文档</span>
+<span class="token function selector">\documentclass</span><span class="token punctuation">[</span>letterpaper<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">article</span><span class="token punctuation">}</span>
+<span class="token comment">% 导入各种各样的包</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">aaai22</span><span class="token punctuation">}</span>  <span class="token comment">% DO NOT CHANGE THIS</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">times</span><span class="token punctuation">}</span>  <span class="token comment">% DO NOT CHANGE THIS</span>
+
+<span class="token comment">% 定义文章标题</span>
+<span class="token function selector">\title</span><span class="token punctuation">{</span>Writing title here<span class="token punctuation">}</span>
+
+<span class="token comment">% 定义文章作者</span>
+<span class="token function selector">\author</span><span class="token punctuation">{</span>
+    Author1<span class="token function selector">\textsuperscript</span><span class="token punctuation">{</span><span class="token function selector">\rm</span> 1<span class="token punctuation">}</span><span class="token function selector">\thanks</span><span class="token punctuation">{</span>这里写通信作者相关信息<span class="token punctuation">}</span><span class="token function selector">\\</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">% 定义作者的通讯地址、邮箱等</span>
+<span class="token function selector">\affiliations</span><span class="token punctuation">{</span>
+    <span class="token function selector">\textsuperscript</span><span class="token punctuation">{</span><span class="token function selector">\rm</span> 1<span class="token punctuation">}</span>Association for the Advancement of Artificial Intelligence<span class="token function selector">\\</span>
+    publications22@aaai.org
+<span class="token punctuation">}</span>
+
+<span class="token comment">% 全文开始标志</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+<span class="token comment">% 生成标题</span>
+<span class="token function selector">\maketitle</span>
+
+<span class="token comment">% 摘要</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">abstract</span><span class="token punctuation">}</span>
+This is a paer about ...
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">abstract</span><span class="token punctuation">}</span>
+
+<span class="token comment">% 章内容</span>
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">第1章</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\section</span><span class="token punctuation">{</span><span class="token headline class-name">第2章</span><span class="token punctuation">}</span>
+...
+
+<span class="token comment">% 指定使用的.bib文件名</span>
+<span class="token function selector">\bibliography</span><span class="token punctuation">{</span>aaai22<span class="token punctuation">}</span>
+
+<span class="token comment">% 文章结束标志</span>
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+...
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="常用的tex命令"><a href="#常用的tex命令" class="headerlink" title="常用的tex命令"></a>常用的tex命令</h2><p>\usepackage<br>这是一个导入包的命令,，例如：<code>\usepackage{hyperref}</code>则会导入超链接包hyperref，如果没有导入该包，则生成的文档，点击文献引用或者图表引用或者网址链接，都不会跳转。</p>
+<p>\title<br>\author<br>\textsuperscript<br>\thanks<br>\affiliations<br>\iffalse与\fi<br>\begin与\end<br>\begin{document}<br>\begin{abstract}<br>\begin{itemize}<br>\begin{table}<br>\begin{figure}<br>\begin{equation}<br>\section与\subsection<br>\paragraph<br>\appendix<br>\textbf与\textit<br>\small<br>\ref<br>\cite、\citep、…<br>\footnote<br>\url<br>\label</p>
+<h2 id="论文排版辅助工具"><a href="#论文排版辅助工具" class="headerlink" title="论文排版辅助工具"></a>论文排版辅助工具</h2><p><a target="_blank" rel="noopener" href="https://archive.acemap.info/paper-x-ray/">Paper X-Ray</a>: 这是一款用于评估自己论文排版得分的免费网站。得分50分以下说明排版得继续优化。如下图所示为AAAI2020接收论文《A Pre-training Based Personalized Dialogue Generation Model with Persona-sparse Data》的得分，这说明该篇论文排版很好！</p>
+<p><img src="https://img-blog.csdnimg.cn/453b14d1b8c340d780070cb5332d7b68.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAWWlyb25nQ2hlbg==,size_20,color_FFFFFF,t_70,g_se,x_16"></p>
+<p><a target="_blank" rel="noopener" href="https://www.phrasebank.manchester.ac.uk/">manchester</a>: 这是一款提供各部分论文写作格式的网站</p>
+<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><p>转载自[<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/364607865">Here</a>]，有删改。</p>
+<p><strong>[技巧1]</strong> 下载大佬的latex模版进行学习， 方法：</p>
+<ol>
+<li><ol>
+<li>进入arxiv网站</li>
+<li>download下选择other formats</li>
+<li>source下 点击 [download source]</li>
+<li>重命名文件夹，改为 .tar格式， 如： 重命名1512.03385 为 1512.03385.tar</li>
+<li>解压缩1512.03385.tar， 再将得到的文件夹压缩为： <a href="https://link.zhihu.com/?target=http://1512.03385.zip/">1512.03385.zip</a></li>
+<li>上传zip文件到 overleaf</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://pic3.zhimg.com/80/v2-a501f9cda052facb2297819f4c1ff882_720w.jpg" alt="img"></p>
+<p><img src="https://pic3.zhimg.com/80/v2-7d94614c830af3786ba00665ae0b1d22_720w.jpg" alt="img"></p>
+<p><strong>[技巧2]</strong> 截图或者拍照上传到 <a href="https://link.zhihu.com/?target=https://accounts.mathpix.com/">Mathpix Accounts</a> 网站，自动识别 照片中的 公式！</p>
+<p>如： 将截图 粘贴到 左侧， 会自动生成 左侧的 latex代码</p>
+<p><img src="https://pic4.zhimg.com/80/v2-33316fa0c3520b8f2ebcbced73be433b_720w.png" alt="img"></p>
+<p><strong>[技巧3]</strong> 使用在线latex table生成工具 （如<a href="https://link.zhihu.com/?target=https://tableconvert.com/?output=latex">table to markdown,csv,json,latex table,excel,sql,xml</a>表格）， 将excel表格自动转成latex格式</p>
+<p><strong>[技巧4]</strong> 可以用 google slides和合作者 同步编辑图片，然后生成 pdf， 插入到 overleaf中</p>
+<p>如：google slides制作了一个4页的pdf： figures/pugcn_cvpr21_kitti_reduced.pdf， 可以用软件或者在线pdf压缩工具（如<a href="https://link.zhihu.com/?target=https://www.ilovepdf.com/compress_pdf">https://www.ilovepdf.com/compress_pdf</a>）压缩pdf的大小</p>
+<p>如下代码用了 subfigure package，插入overleaf</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">\begin{figure*}[htb!]
+\begin{center}
+    \begin{subfigure}{.24\textwidth}
+        \centering
+        \includegraphics[page=1,trim = 0mm 45mm 0mm 0mm, clip, width=1.0\textwidth]{figures/pugcn_cvpr21_kitti_reduced.pdf}
+        \caption{Input}
+    \end{subfigure}
+    \begin{subfigure}{.24\textwidth}
+        \centering
+        \includegraphics[page=2,trim = 0mm  45mm 0mm 0mm, clip, width=1.0\textwidth]{figures/pugcn_cvpr21_kitti_reduced.pdf}
+        \caption{3PU \cite{Yifan20193pu}}
+    \end{subfigure}
+    \begin{subfigure}{.24\textwidth}
+        \centering
+       \includegraphics[page=3,trim = 0mm  45mm 0mm 0mm, clip, width=1.0\textwidth]{figures/pugcn_cvpr21_kitti_reduced.pdf}
+         \caption{PU-GAN \cite{li2019pugan}}
+    \end{subfigure}
+    \begin{subfigure}{.24\textwidth}
+        \centering
+       \includegraphics[page=4,trim = 0mm  45mm 0mm 0mm, clip, width=1.0\textwidth]{figures/pugcn_cvpr21_kitti_reduced.pdf}
+     \caption{PU-GCN (ours)}
+    \end{subfigure}
+\vspace{-5pt}    
+\end{center}
+\vspace{-15pt}
+\caption{\textbf{Upsampling real-scanned point clouds from KITTI \cite{Geiger2012CVPR}}. PU-GCN preserves intricate structures and generates fine-grained details (\eg the window of the car, the pedal of the motorcycle, \etc). Please zoom in to see details.}
+\label{fig:exp-kitti}
+\vspace{-10pt}
+\end{figure*} <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://pic3.zhimg.com/80/v2-4783b7f58083bf1e8e7e2a344a3998b6_720w.jpg" alt="img"></p>
+<p><strong>[技巧5]</strong> overleaf与Dropbox联动。 这样可以在本地用软件（如texpad）编辑overleaf, 然后利用dropbox实现同步。</p>
+<p><strong>[技巧6]</strong> 论文引用，建议用<a href="https://link.zhihu.com/?target=https://www.semanticscholar.org/">Semantic Scholar | AI-Powered Research Tool</a>网站找bibtex，如果他们给出的不准，可以用 <a href="https://link.zhihu.com/?target=http://dblp.org/">dblp.org</a> （选择condensed模式的bibtex), 如图：</p>
+<p><img src="https://pic4.zhimg.com/80/v2-06cca49fdf4549e3bed6b216747ccc8f_720w.jpg" alt="img"><a target="_blank" rel="noopener" href="https://dblp.org/rec/conf/cvpr/LiQD0TG20.html?view=bibtex&amp;amp;amp;amp;amp;param=0&amp;amp;amp;amp;amp;q=P">https://dblp.org/rec/conf/cvpr/LiQD0TG20.html?view=bibtex&amp;amp;amp;amp;amp;param=0&amp;amp;amp;amp;amp;q=P</a></p>
+<p><strong>[技巧7]</strong> 用<a href="https://link.zhihu.com/?target=https://www.omnigroup.com/omnigraffle/">omnigraffle</a> 工具编辑精美的流程图</p>
+<p><strong>[技巧8]</strong> 用LaTexit 软件， 生成 公式图片，可以粘贴到 各种 slides或者其他软件中</p>
+<p>参考文章</p>
+<p>latex排版 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/83496692">https://zhuanlan.zhihu.com/p/83496692</a></p>
+<p>latex公式 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d7c4cf8dc62d">https://www.jianshu.com/p/d7c4cf8dc62d</a></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://qifengdai.github.io" rel="external nofollow noreferrer">DaIQiFenG</a>
+                    </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://qifengdai.github.io/post/edf796.html">https://qifengdai.github.io/post/edf796.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY-SA 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://qifengdai.github.io" target="_blank">DaIQiFenG</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/overleaf/">
+                                    <span class="chip bg-color">overleaf</span>
+                                </a>
+                            
+                                <a href="/tags/latex/">
+                                    <span class="chip bg-color">latex</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">
+                                    <span class="chip bg-color">论文写作</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="wechat,qq,weibo,qzone,douban,google,twitter,facebook,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/null") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+		admin_email: 'daiqifeng0511@gmail.com',
+        appId: '7eRsp2Ta8p60GJoEFiJy01pl-gzGzoHsz',
+        appKey: 'wt1b5UcVhknXzxOmWECNEYYv',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+		comment_count: 'true' === 'true',
+        avatar: 'retro',
+        pageSize: '10',
+        lang: 'zh-cn',
+		path: window.location.pathname,
+        placeholder: '留言可以留下联系方式哦~输入邮箱会有邮件回复提醒，更高效进行交流~'
+    });
+	
+	$(document).ready(function(){ 
+		$("#vcomments").on('click', 'span.vat',function(){ 		
+			$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap")); 	
+			$('textarea#veditor').focus(); 
+		}) 
+	})
+</script>
+
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/post/edf796.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="overleaf和latex的论文写作">
+                        
+                        <span class="card-title">overleaf和latex的论文写作</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/overleaf/" class="post-category">
+                                    overleaf
+                                </a>
+                            
+                            <a href="/categories/overleaf/latex/" class="post-category">
+                                    latex
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/overleaf/">
+                        <span class="chip bg-color">overleaf</span>
+                    </a>
+                    
+                    <a href="/tags/latex/">
+                        <span class="chip bg-color">latex</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">
+                        <span class="chip bg-color">论文写作</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/post/41262.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="CV学习路线">
+                        
+                        <span class="card-title">CV学习路线</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/AI/" class="post-category">
+                                    AI
+                                </a>
+                            
+                            <a href="/categories/AI/CV/" class="post-category">
+                                    CV
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/AI/">
+                        <span class="chip bg-color">AI</span>
+                    </a>
+                    
+                    <a href="/tags/CV/">
+                        <span class="chip bg-color">CV</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
+                        <span class="chip bg-color">学习路线</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022</span>
+            
+            <a href="/about" target="_blank">DaIQiFenG</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">23.6k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+						window.setTimeout("calcSiteTime()", 1000);
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2022";
+                        var startMonth = "4";
+                        var startDate = "24";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+						var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours); 
+						var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes); 
+						var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+						
+						document.getElementById("sitetime").innerHTML = "本站已运行 " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒"; 
+
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/QifengDai" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:daiqifeng0511@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+    
+
+    <!-- Baidu Analytics -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?54e82cd4d551bd85eaceaf71af5ca577";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
